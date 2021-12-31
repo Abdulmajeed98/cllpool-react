@@ -1079,6 +1079,11 @@
     "minimatch" "^3.0.4"
     "strip-json-comments" "^3.1.1"
 
+"@headlessui/react@^1.4.2":
+  "integrity" "sha512-N8tv7kLhg9qGKBkVdtg572BvKvWhmiudmeEpOCyNwzOsZHCXBtl8AazGikIfUS+vBoub20Fse3BjawXDVPPdug=="
+  "resolved" "https://registry.npmjs.org/@headlessui/react/-/react-1.4.2.tgz"
+  "version" "1.4.2"
+
 "@humanwhocodes/config-array@^0.9.2":
   "integrity" "sha512-UXOuFCGcwciWckOpmfKDq/GyhlTf9pN/BzG//x8p8zTOFEcGuA68ANXheFS0AGvy3qgZqLBUkMs7hqzqCKOVwA=="
   "resolved" "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.9.2.tgz"
@@ -7043,7 +7048,7 @@
     "strip-ansi" "^6.0.1"
     "text-table" "^0.2.0"
 
-"react-dom@*", "react-dom@^17.0.2":
+"react-dom@*", "react-dom@^16 || ^17 || ^18", "react-dom@^17.0.2":
   "integrity" "sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz"
   "version" "17.0.2"
@@ -7056,6 +7061,11 @@
   "integrity" "sha512-mKR90fX7Pm5seCOfz8q9F+66VCc1PGsWSBxKbITjfKVQHMNF2zudxHnMdJiB1fRCb+XsbQV9sO9DCkgsMQgBIA=="
   "resolved" "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.10.tgz"
   "version" "6.0.10"
+
+"react-icons@^4.3.1":
+  "integrity" "sha512-cB10MXLTs3gVuXimblAdI71jrJx8njrJZmNMEMC+sQu5B/BIOmlsAjskdqpn81y8UBVEGuHODd7/ci5DvoSzTQ=="
+  "resolved" "https://registry.npmjs.org/react-icons/-/react-icons-4.3.1.tgz"
+  "version" "4.3.1"
 
 "react-is@^16.13.1":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
@@ -7127,7 +7137,7 @@
   optionalDependencies:
     "fsevents" "^2.3.2"
 
-"react@*", "react@^17.0.2", "react@>= 16", "react@17.0.2":
+"react@*", "react@^16 || ^17 || ^18", "react@^17.0.2", "react@>= 16", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
