@@ -18,7 +18,10 @@ module.exports = {
         '800': '800ms',
         '900': '900ms',
         '1000': '1000ms',
-      }
+      },
+      // backgroundImage: {
+
+      // },
     },
   },
   plugins: [],
