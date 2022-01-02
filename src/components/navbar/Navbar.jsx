@@ -11,7 +11,7 @@ const languages = [
 
 const Navbar = () => {
     return (
-        <nav className="fixed top-0 left-0 w-full flex items-center justify-between bg-transparent px-sides py-8 z-50">
+        <nav className="fixed top-0 left-0 w-full flex items-center justify-between bg-transparent px-sides py-8 z-max">
             <a href='#' className='w-44 h-26'>
                 <img src={Logo} alt="CLLPOOL Logo" className='w-full h-full' />
             </a>

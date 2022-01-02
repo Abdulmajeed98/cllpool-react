@@ -17,6 +17,12 @@ module.exports = {
         '4': '4 4 0%',
       },
 
+      zIndex: {
+        '100': '100',
+        '200': '200',
+        'max': '9999',
+      },
+
       transitionDuration: {
         '400': '400ms',
         '600': '600ms',
@@ -27,7 +33,6 @@ module.exports = {
       },
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
-        'animate-border': 'curvedBorder 0.5s ease',
       },
 
       keyframes: {
@@ -35,12 +40,6 @@ module.exports = {
           '0%, 100%': { transform: 'rotate(-3deg)' },
           '50%': { transform: 'rotate(3deg)' },
         },
-
-        curvedBorder: {
-          '0%': { borderRadius: '0px', },
-          '100%': { borderRadius: '9999px', }
-        },
-
       },
 
     },
