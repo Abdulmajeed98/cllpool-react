@@ -11,6 +11,12 @@ module.exports = {
         'sides': '10%'
       },
 
+      flex: {
+        '2': '2 2 0%',
+        '3': '3 3 0%',
+        '4': '4 4 0%',
+      },
+
       transitionDuration: {
         '400': '400ms',
         '600': '600ms',
@@ -18,7 +24,19 @@ module.exports = {
         '800': '800ms',
         '900': '900ms',
         '1000': '1000ms',
-      }
+      },
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
+        'animate-border': 'curvedBorder 0.5s ease',
+      },
+
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        },
+      },
+
     },
   },
   plugins: [],
