@@ -18,8 +18,8 @@ const Header = () => {
                 <button className='border-2 border-white px-8 py-4 mt-8 text-lg uppercase  hover:bg-green-400 hover:border-green-500 transition duration-400 hover:translate-y-[-5px]'>Contact Us</button>
             </div>
 
-            <button className='w-14 h-14 mb-8'>
-                <img src={downArrow} alt="arrow down icon" className='w-full h-full animate-bounce' />
+            <button className='w-14 h-14 mb-8 animate-bounce'>
+                <img src={downArrow} alt="arrow down icon" className='w-full h-full' />
             </button>
         </header>
     )

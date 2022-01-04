@@ -37,11 +37,15 @@ module.exports = {
 
       keyframes: {
         wiggle: {
-          '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
+          '0%, 100%': { transform: 'rotate(-10deg)' },
+          '50%': { transform: 'rotate(10deg)' },
         },
       },
 
+      screens: {
+        'xsm': '512px',
+        '3xl': '1792px',
+      },
     },
   },
   plugins: [],
