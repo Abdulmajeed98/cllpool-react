@@ -35,12 +35,6 @@ module.exports = {
           '0%, 100%': { transform: 'rotate(-3deg)' },
           '50%': { transform: 'rotate(3deg)' },
         },
-
-        curvedBorder: {
-          '0%': { borderRadius: '0px', },
-          '100%': { borderRadius: '9999px', }
-        },
-
       },
 
     },
