@@ -1,4 +1,4 @@
-import VideoHeader from '../../assets/video/header-video.mp4'
+import VideoHeader from '../../assets/videos/header-video.mp4'
 import downArrow from '../../assets/icons/down-arrow.png'
 
 
