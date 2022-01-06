@@ -46,6 +46,15 @@ module.exports = {
         'xsm': '512px',
         '3xl': '1792px',
       },
+
+      height: {
+        '128': '32rem',
+      },
+
+      minHeight: {
+        '1/2': '50%',
+        'message-textarea': '17.125rem',
+      },
     },
   },
   plugins: [],

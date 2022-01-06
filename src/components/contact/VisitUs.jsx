@@ -19,10 +19,10 @@ const VisitUs = () => {
             <h2 className='text-6xl text-center py-4 mt-4' > Visit Us</h2 >
 
             {/* map component */}
-            <div className='w-full h-96'>
+            <div className='w-full h-128'>
                 <ReactMapGL ReactMapGL {...viewPort} mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_API_KEY} onViewStateChange={setViewPort} mapStyle="mapbox://styles/mapbox/dark-v10" width={'100%'} height={'100%'} >
                     <Marker latitude={CLLPOOL_COORDINATES.latitude} longitude={CLLPOOL_COORDINATES.longitude} offsetLeft={-45} offsetTop={-35} className='flex flex-col items-center'>
-                        <p className='text-sm text-cyan-500'>CLLPOOL Company</p> <HiOutlineLocationMarker className='text-2xl text-cyan-500' />
+                        <p className='text-sm text-sky-500'>CLLPOOL Company</p> <HiOutlineLocationMarker className='text-2xl text-sky-500' />
                     </Marker>
                 </ReactMapGL>
             </div>
