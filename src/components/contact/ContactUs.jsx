@@ -1,11 +1,20 @@
 import { useState } from 'react'
 import VisitUs from "./VisitUs"
 import FormInput from './FormInput'
+import ContactInfo from './ContactInfo'
+import { MdPhone, MdEmail } from "react-icons/md"
+import { FaMapMarkerAlt } from "react-icons/fa"
 
 const formFields = [
     { id: 'name', title: 'name', type: 'text', placeholder: 'Enter your name' },
     { id: 'phone', title: 'phone number', type: 'text', placeholder: 'Enter your phone number' },
     { id: 'email', title: 'email', type: 'email', placeholder: 'Enter your email address' },
+]
+
+const contactInfoData = [
+    { id: 1, icon: <MdPhone className='w-full h-full' />, title: 'Phone', content: '+964 750 496 7476', href: 'tel:+9647504967476' },
+    { id: 2, icon: <MdEmail className='w-full h-full' />, title: 'Email', content: 'info@cllpooliraq.com', href: 'mailto:info@cllpooliraq.com' },
+    { id: 3, icon: <FaMapMarkerAlt className='w-full h-full' />, title: 'Address', content: 'Holy Zard St, Erbil, Iraq, 44001', href: '#' },
 ]
 
 const ContactUs = () => {
@@ -38,9 +47,11 @@ const ContactUs = () => {
                     </div>
                 </form>
 
-                {/* <div className='flex items-center justify-start'>
-
-                </div> */}
+                <div className='px-sides flex items-center justify-center gap-14 my-8'>
+                    {contactInfoData.map(element => (
+                        <ContactInfo key={element.id} icon={element.icon} title={element.title} content={element.content} href={element.href} />
+                    ))}
+                </div>
             </div>
         </div>
     )

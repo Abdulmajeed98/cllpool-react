@@ -15,6 +15,12 @@ module.exports = {
         '2': '2 2 0%',
         '3': '3 3 0%',
         '4': '4 4 0%',
+        '5': '5 5 0%',
+        '6': '6 6 0%',
+        '7': '7 7 0%',
+        '8': '8 8 0%',
+        '9': '9 9 0%',
+        '10': '10 10 0%',
       },
 
       zIndex: {
@@ -32,14 +38,24 @@ module.exports = {
         '1000': '1000ms',
       },
       animation: {
-        wiggle: 'wiggle 1s ease-in-out infinite',
+        wiggle: 'wiggle 2s ease-in-out infinite',
+        bouncing: 'bouncing 3s ease-out infinite',
       },
 
       keyframes: {
         wiggle: {
-          '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
+          '0%, 100%': { transform: 'rotate(-5deg)' },
+          '50%': { transform: 'rotate(5deg)' },
         },
+        bouncing: {
+          '0%': { transform: 'translateY(0)' },
+          '10%': { transform: 'translateY(0)' },
+          '30%': { transform: 'scale(1.01, 1.02) translateY(-7px)' },
+          '50%': { transform: 'translateY(0px)' },
+          '57%': { transform: 'translateY(0px)' },
+          '64%': { transform: 'translateY(0px)' },
+          '100%': { transform: 'translateY(0)' },
+        }
       },
 
       screens: {
