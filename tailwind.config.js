@@ -49,12 +49,7 @@ module.exports = {
         },
         bouncing: {
           '0%': { transform: 'translateY(0)' },
-          '10%': { transform: 'translateY(0)' },
-          '30%': { transform: 'scale(1.01, 1.02) translateY(-7px)' },
-          '50%': { transform: 'translateY(0px)' },
-          '57%': { transform: 'translateY(0px)' },
-          '64%': { transform: 'translateY(0px)' },
-          '100%': { transform: 'translateY(0)' },
+          '30%': { transform: 'translateY(-7px)' },
         }
       },
 

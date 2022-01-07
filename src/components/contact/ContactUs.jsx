@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import VisitUs from "./VisitUs"
 import FormInput from './FormInput'
 import ContactInfo from './ContactInfo'
@@ -12,18 +11,12 @@ const formFields = [
 ]
 
 const contactInfoData = [
-    { id: 1, icon: <MdPhone className='w-full h-full' />, title: 'Phone', content: '+964 750 496 7476', href: 'tel:+9647504967476' },
-    { id: 2, icon: <MdEmail className='w-full h-full' />, title: 'Email', content: 'info@cllpooliraq.com', href: 'mailto:info@cllpooliraq.com' },
-    { id: 3, icon: <FaMapMarkerAlt className='w-full h-full' />, title: 'Address', content: 'Holy Zard St, Erbil, Iraq, 44001', href: '#' },
+    { id: 1, icon: <MdPhone className='w-full h-full' />, title: 'Phone', content: '+964 750 496 7476', href: 'tel:+9647504967476', animation: 'animate-wiggle' },
+    { id: 2, icon: <MdEmail className='w-full h-full' />, title: 'Email', content: 'info@cllpooliraq.com', href: 'mailto:info@cllpooliraq.com', animation: 'animate-pulse' },
+    { id: 3, icon: <FaMapMarkerAlt className='w-full h-full' />, title: 'Address', content: 'Holy Zard St, Erbil, Iraq, 44001', href: '#', animation: 'animate-bouncing' },
 ]
 
 const ContactUs = () => {
-    // const [formData, setFormData] = useState({
-    //     name: '',
-    //     email: '',
-    //     phoneNumber: '',
-    //     message: ''
-    // })
     return (
         <div className="flex flex-col">
             <VisitUs />
@@ -49,7 +42,7 @@ const ContactUs = () => {
 
                 <div className='px-sides flex items-center justify-center gap-14 my-8'>
                     {contactInfoData.map(element => (
-                        <ContactInfo key={element.id} icon={element.icon} title={element.title} content={element.content} href={element.href} />
+                        <ContactInfo key={element.id} icon={element.icon} title={element.title} content={element.content} href={element.href} animation={element.animation} />
                     ))}
                 </div>
             </div>
