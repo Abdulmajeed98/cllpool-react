@@ -1,4 +1,5 @@
 
+import { useEffect, useState } from 'react'
 import Logo from '../../assets/nav-logo.svg'
 import NavLink from './NavLink'
 
@@ -9,9 +10,17 @@ const languages = [
     { id: 4, lang: 'Kurdish', abbr: 'kr' },
 ]
 
+const navbarHeight = 136;
+
 const Navbar = () => {
+    const [navBackground, setNavBackground] = useState(false)
+    const changeNavbarBackground = () => {
+        window.scrollY >= navbarHeight ? setNavBackground(true) : setNavBackground(false);
+    }
+    window.addEventListener('scroll', changeNavbarBackground)
+
     return (
-        <nav className="fixed top-0 left-0 w-full flex items-center justify-between bg-transparent px-sides py-8 z-max">
+        <nav className={`fixed top-0 left-0 w-full flex items-center justify-between ${!navBackground && 'bg-transparent'} ${navBackground && 'bg-slate-700'} px-sides py-8 z-max transition-all duration-500`}>
             <a href='#' className='w-44 h-26'>
                 <img src={Logo} alt="CLLPOOL Logo" className='w-full h-full' />
             </a>
