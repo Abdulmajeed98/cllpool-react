@@ -1,7 +1,8 @@
 
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Logo from '../../assets/nav-logo.svg'
 import NavLink from './NavLink'
+import DropDown from './../dropDown/DropDown';
 
 const languages = [
     { id: 1, lang: 'English', abbr: 'en' },
@@ -32,9 +33,7 @@ const Navbar = () => {
                 <NavLink destination={'#'} content={'contact us'} />
             </div>
 
-            <select name="langs" id="langs">
-                {languages.map(item => (<option value={item.abbr}>{item.lang}</option>))}
-            </select>
+            <DropDown navBgChange={navBackground} />
         </nav >
     )
 }
