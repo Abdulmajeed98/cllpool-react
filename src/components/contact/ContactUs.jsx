@@ -18,7 +18,7 @@ const contactInfoData = [
 
 const ContactUs = () => {
     return (
-        <section className="flex flex-col" id="contact-us">
+        <section className="flex flex-col scroll-mt-nav-offset" id="contact-us">
             <VisitUs />
             <div className="flex flex-col mt-4 py-4 gap-8">
                 <h2 className="text-6xl text-center">Contact Us</h2>

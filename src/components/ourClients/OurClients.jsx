@@ -25,7 +25,7 @@ const clients = [
 
 const OurClients = () => {
     return (
-        <section className="bg-slate-700 text-white px-sides py-8" id='clients'>
+        <section className="bg-slate-700 text-white px-sides py-8 scroll-mt-nav-offset" id='clients'>
             <h2 className="text-6xl capitalize text-center my-16">Our Clients</h2>
             <div className='grid grid-cols-3 justify-items-center gap-x-4 gap-y-8 my-8'>
                 {clients.map(client => (<ClientBrand key={client.id} logo={client.logo} alt={client.alt} />))}

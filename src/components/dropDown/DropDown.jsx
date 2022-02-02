@@ -23,7 +23,7 @@ const DropDown = ({ navBgChange }) => {
                 <Listbox.Options className={`absolute top-12 flex flex-col w-full justify-center ${navBgChange ? 'bg-slate-700' : 'bg-transparent'} border border-white`}>
                     {languages.map((language) => (
                         <Listbox.Option
-                            className={`cursor-pointer hover:bg-white hover:text-slate-700 transition-all duration-300 px-8 py-2`}
+                            className={`cursor-pointer hover:bg-slate-400 hover:text-slate-700 transition-all duration-300 px-8 py-2`}
                             key={language.id}
                             value={language}>
                             {language.lang}

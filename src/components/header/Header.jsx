@@ -1,10 +1,9 @@
 import VideoHeader from '../../assets/videos/header-video.mp4'
 import downArrow from '../../assets/icons/down-arrow.png'
 
-
 const Header = () => {
     return (
-        <header className="relative bg-black bg-opacity-60 w-screen h-screen flex flex-col justify-between items-center">
+        <header className="relative bg-black bg-opacity-60 w-screen h-screen flex flex-col justify-between items-center" id='home'>
             <video src={VideoHeader} autoPlay muted loop className='absolute object-fill w-full h-full -z-10'></video>
 
             <div className='flex flex-col flex-4 justify-center items-center gap-4 pt-8 w-full text-white'>
