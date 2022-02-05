@@ -1,36 +1,41 @@
-
-import { useState } from 'react'
-import Logo from '../../assets/logo.svg'
-import NavLink from './NavLink'
-import DropDown from './../dropDown/DropDown';
-
-
-
+import { useState } from "react";
+import Logo from "../../assets/nav-logo.svg";
+import NavLink from "./NavLink";
+import data from "../../data.json";
 
 const Navbar = () => {
-    const navbarHeight = 100;
-    const [navBackground, setNavBackground] = useState(false)
-    const changeNavbarBackground = () => {
-        window.scrollY >= navbarHeight ? setNavBackground(true) : setNavBackground(false);
-    }
-    window.addEventListener('scroll', changeNavbarBackground)
+  const [navBackground, setNavBackground] = useState(false);
+  const changeNavbarBackground = () => {
+    window.scrollY >= data.navbarHeight
+      ? setNavBackground(true)
+      : setNavBackground(false);
+  };
+  window.addEventListener("scroll", changeNavbarBackground);
 
-    return (
-        <nav className={`fixed top-0 left-0 w-full flex items-center justify-between ${!navBackground && 'bg-transparent'} ${navBackground && 'bg-slate-700'} px-sides py-5 z-max transition-all duration-500`}>
-            <a href='#home' className='w-44 h-26'>
-                <img src={Logo} alt="CLLPOOL Logo" className='w-full h-full' />
-            </a>
-            <div className='flex items-center gap-x-12 px-2 py-4'>
-                <NavLink destination={'home'} content={'home'} />
-                <NavLink destination={'about'} content={'about'} />
-                <NavLink destination={'projects'} content={'projects'} />
-                <NavLink destination={'clients'} content={'our client'} />
-                <NavLink destination={'contact-us'} content={'contact us'} />
-            </div>
+  return (
+    <nav
+      className={`fixed top-0 left-0 w-full flex items-center justify-between ${!navBackground && "bg-transparent"
+        } ${navBackground && "bg-slate-700"
+        } px-sides py-8 z-max transition-all duration-500`}
+    >
+      <a href="#" className="w-44 h-26">
+        <img src={Logo} alt="CLLPOOL Logo" className="w-full h-full" />
+      </a>
+      <div className="flex items-center gap-x-12 px-2 py-4">
+        <NavLink destination={"#"} content={"home"} />
+        <NavLink destination={"#"} content={"about"} />
+        <NavLink destination={"#"} content={"projects"} />
+        <NavLink destination={"#"} content={"our client"} />
+        <NavLink destination={"#"} content={"contact us"} />
+      </div>
 
-            <DropDown navBgChange={navBackground} />
-        </nav >
-    )
-}
+      <select name="langs" id="langs">
+        {data?.languages.map((item) => (
+          <option value={item.abbr}>{item.lang}</option>
+        ))}
+      </select>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;
