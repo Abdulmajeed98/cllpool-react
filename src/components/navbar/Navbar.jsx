@@ -18,7 +18,7 @@ const Navbar = () => {
         } ${navBackground && "bg-slate-700"
         } px-sides py-8 z-max transition-all duration-500`}
     >
-      <a href="#" className="w-44 h-26">
+      <a href="#home" className="w-44 h-26">
         <img src={Logo} alt="CLLPOOL Logo" className="w-full h-full" />
       </a>
       <div className="flex items-center gap-x-12 px-2 py-4">
