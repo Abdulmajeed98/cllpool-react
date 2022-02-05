@@ -1,0 +1,59 @@
+{
+  "formFields": [
+    {
+      "id": "name",
+      "title": "name",
+      "type": "text",
+      "placeholder": "Enter your name"
+    },
+    {
+      "id": "phone",
+      "title": "phone number",
+      "type": "text",
+      "placeholder": "Enter your phone number"
+    },
+    {
+      "id": "email",
+      "title": "email",
+      "type": "email",
+      "placeholder": "Enter your email address"
+    }
+  ],
+  "contactInfoData": [
+    {
+      "id": 1,
+      "icon": "phone",
+      "title": "Phone",
+      "content": "+964 750 496 7476",
+      "href": "tel:+9647504967476",
+      "animation": "animate-wiggle"
+    },
+    {
+      "id": 2,
+      "icon": "email",
+      "title": "Email",
+      "content": "info@cllpooliraq.com",
+      "href": "mailto:info@cllpooliraq.com",
+      "animation": "animate-pulse"
+    },
+    {
+      "id": 3,
+      "icon": "address",
+      "title": "Address",
+      "content": "Holy Zard St, Erbil, Iraq, 44001",
+      "href": "#",
+      "animation": "animate-bouncing"
+    }
+  ],
+  "CLLPOOL_COORDINATES": {
+    "latitude": 36.197438,
+    "longitude": 44.038536
+  },
+  "languages": [
+    { "id": 1, "lang": "English", "abbr": "en" },
+    { "id": 2, "lang": "Turkish", "abbr": "tr" },
+    { "id": 3, "lang": "Arabic", "abbr": "ar" },
+    { "id": 4, "lang": "Kurdish", "abbr": "kr" }
+  ],
+  "navbarHeight": 136
+}
