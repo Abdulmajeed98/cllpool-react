@@ -1,13 +1,14 @@
 
 import { useState } from 'react'
-import Logo from '../../assets/nav-logo.svg'
+import Logo from '../../assets/logo.svg'
 import NavLink from './NavLink'
 import DropDown from './../dropDown/DropDown';
 
 
-const navbarHeight = 136;
+
 
 const Navbar = () => {
+    const navbarHeight = 100;
     const [navBackground, setNavBackground] = useState(false)
     const changeNavbarBackground = () => {
         window.scrollY >= navbarHeight ? setNavBackground(true) : setNavBackground(false);
@@ -15,7 +16,7 @@ const Navbar = () => {
     window.addEventListener('scroll', changeNavbarBackground)
 
     return (
-        <nav className={`fixed top-0 left-0 w-full flex items-center justify-between ${!navBackground && 'bg-transparent'} ${navBackground && 'bg-slate-700'} px-sides py-8 z-max transition-all duration-500`}>
+        <nav className={`fixed top-0 left-0 w-full flex items-center justify-between ${!navBackground && 'bg-transparent'} ${navBackground && 'bg-slate-700'} px-sides py-5 z-max transition-all duration-500`}>
             <a href='#home' className='w-44 h-26'>
                 <img src={Logo} alt="CLLPOOL Logo" className='w-full h-full' />
             </a>

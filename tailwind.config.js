@@ -7,9 +7,14 @@ module.exports = {
       fontFamily: {
         'sans': 'Rubik, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji'
       },
+
       spacing: {
         'sides': '10%',
-        'nav-offset': '8.5rem',
+        'nav-offset': '7rem',
+      },
+
+      colors: {
+        'insta': 'linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));'
       },
 
       flex: {
