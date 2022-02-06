@@ -23,17 +23,21 @@
     {
       "id": 1,
       "icon": "phone",
-      "title": "Phone",
+      "title": "Phones",
       "content": "+964 750 496 7476",
       "href": "tel:+9647504967476",
+      "altContent": "",
+      "altHref": "",
       "animation": "animate-wiggle"
     },
     {
       "id": 2,
       "icon": "email",
-      "title": "Email",
+      "title": "Emails",
       "content": "info@cllpooliraq.com",
       "href": "mailto:info@cllpooliraq.com",
+      "altContent": "cllpool@hotmail.com",
+      "altHref": "mailto:cllpool@hotmail.com",
       "animation": "animate-pulse"
     },
     {
@@ -42,6 +46,8 @@
       "title": "Address",
       "content": "Holy Zard St, Erbil, Iraq, 44001",
       "href": "#",
+      "altContent": "",
+      "altHref": "",
       "animation": "animate-bouncing"
     }
   ],
@@ -82,5 +88,15 @@
       "destination": "contact-us",
       "content": "contact us"
     }
-  ]
+  ],
+
+  "CLLPOOL_COPYRIGHT": {
+    "firstPart": "copyright",
+    "secondPart": "CLLPOOL, All rights reserved."
+  },
+
+  "footerTitles": {
+    "quickLinks": "quick links",
+    "contactUs": "contact us"
+  }
 }

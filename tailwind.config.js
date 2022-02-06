@@ -13,10 +13,6 @@ module.exports = {
         'nav-offset': '7rem',
       },
 
-      colors: {
-        'insta': 'linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));'
-      },
-
       flex: {
         '2': '2 2 0%',
         '3': '3 3 0%',

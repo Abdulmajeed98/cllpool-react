@@ -80,6 +80,8 @@ const ContactUs = () => {
               title={element.title}
               content={element.content}
               href={element.href}
+              altContent={element.altContent}
+              altHref={element.altHref}
               animation={element.animation}
             />
           ))}
