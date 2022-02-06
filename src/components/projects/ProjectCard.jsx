@@ -1,7 +1,7 @@
 
 const ProjectCard = ({ title, img }) => {
     return (
-        <div className="group relative flex flex-col justify-end items-center w-[33%] overflow-hidden h-128 rounded-lg before:content-[''] before:absolute before:inset-0 before:bg-black before:bg-opacity-25 before:-z-10">
+        <div className="group relative flex flex-col justify-end items-center w-full overflow-hidden h-128 before:content-[''] before:absolute before:inset-0 before:bg-black before:bg-opacity-25 before:-z-10">
 
             {/* Card bg image  */}
             <img src={img} alt="project" className="absolute inset-0 w-full h-full -z-20 group-hover:scale-110 transition-all duration-400" />

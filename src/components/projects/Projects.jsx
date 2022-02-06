@@ -16,7 +16,7 @@ const Projects = () => {
     return (
         <section className="pt-12 scroll-mt-nav-offset" id="projects">
             <h2 className="capitalize text-center text-6xl my-12">Projects</h2>
-            <div className="flex flex-wrap justify-center overflow-hidden gap-1">
+            <div className="grid grid-cols-3 justify-items-center overflow-hidden">
                 {projectsData.map(project => (<ProjectCard key={project.id} title={project.name} img={project.img} />))}
             </div>
         </section>
