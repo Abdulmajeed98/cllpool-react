@@ -21,6 +21,7 @@ const Footer = () => {
             <div className='flex w-1/3'>
                 <div>
                     <h3 className='capitalize'>quick links</h3>
+
                 </div>
             </div>
         </div>

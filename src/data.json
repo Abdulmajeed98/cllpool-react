@@ -55,5 +55,32 @@
     { "id": 3, "lang": "Arabic", "abbr": "ar" },
     { "id": 4, "lang": "Kurdish", "abbr": "kr" }
   ],
-  "navbarHeight": 136
+  "navbarHeight": 112,
+  "navLinks": [
+    {
+      "id": 1,
+      "destination": "home",
+      "content": "home"
+    },
+    {
+      "id": 2,
+      "destination": "about",
+      "content": "about"
+    },
+    {
+      "id": 3,
+      "destination": "projects",
+      "content": "projects"
+    },
+    {
+      "id": 4,
+      "destination": "clients",
+      "content": "our client"
+    },
+    {
+      "id": 5,
+      "destination": "contact-us",
+      "content": "contact us"
+    }
+  ]
 }
