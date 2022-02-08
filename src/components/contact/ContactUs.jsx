@@ -3,7 +3,6 @@ import FormInput from "./FormInput";
 import ContactInfo from "./ContactInfo";
 import { MdPhone, MdEmail } from "react-icons/md";
 import { FaMapMarkerAlt } from "react-icons/fa";
-
 import data from "../../data.json";
 
 const icons = [
@@ -82,6 +81,7 @@ const ContactUs = () => {
               href={element.href}
               altContent={element.altContent}
               altHref={element.altHref}
+              target={element.target}
               animation={element.animation}
             />
           ))}

@@ -1,8 +1,9 @@
 import ProjectImg from '../../assets/project-img.jpg';
 import ProjectCard from './ProjectCard';
 
+
 const projectsData = [
-    { id: 1, name: 'project name', img: ProjectImg },
+    { id: 1, name: 'project name', img: "https://tinyurl.com/2p97hbp6" },
     { id: 2, name: 'project name', img: ProjectImg },
     { id: 3, name: 'project name', img: ProjectImg },
     { id: 4, name: 'project name', img: ProjectImg },

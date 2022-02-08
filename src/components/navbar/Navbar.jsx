@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full flex items-center justify-between ${!navBackground && "bg-transparent"
-        } ${navBackground && "bg-slate-700"
+        } ${navBackground && "bg-sky-500"
         } px-sides py-2 z-max transition-all duration-500`}
     >
       <a href="#home" className="w-44 h-24">
