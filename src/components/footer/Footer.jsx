@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../../assets/logo.svg'
+import { ReactComponent as Logo } from '../../assets/logo.svg'
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa"
 import { MdPhone, MdEmail } from "react-icons/md";
 import data from '../../data.json';
@@ -40,7 +40,7 @@ const Footer = () => {
             {/* first div */}
             <div className='w-1/3'>
                 <div className='mb-8'>
-                    <img src={Logo} alt="Cllpool logo" />
+                    <Logo className='fill-white' />
                 </div>
                 <h3 className='text-xl my-2'>Learn more about us from:</h3>
                 <div className='flex my-2 gap-16'>
