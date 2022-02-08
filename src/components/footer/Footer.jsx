@@ -76,6 +76,7 @@ const Footer = () => {
                                 altContent={element.altContent}
                                 altHref={element.altHref}
                                 animation={""}
+                                titleSize={'text-md'}
                             />
                         ))}
                     </div>

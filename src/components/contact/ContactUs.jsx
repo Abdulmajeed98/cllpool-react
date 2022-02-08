@@ -51,7 +51,7 @@ const ContactUs = () => {
               name="message"
               id="message"
               rows="10"
-              className="resize-y w-full min-h-message-textarea mt-2 border border-slate-700 rounded-md py-4 px-2 focus:outline-2 focus:outline-cyan-700"
+              className="resize-y w-full min-h-message-textarea mt-2 border border-slate-700 rounded-md py-4 px-2 focus:outline-2 focus:outline-sky-500"
               placeholder="Message"
             ></textarea>
           </div>
@@ -83,6 +83,7 @@ const ContactUs = () => {
               altHref={element.altHref}
               target={element.target}
               animation={element.animation}
+              titleSize={'text-xl'}
             />
           ))}
         </div>
