@@ -43,7 +43,7 @@ const Footer = () => {
                     <img src={Logo} alt="Cllpool logo" />
                 </div>
                 <h3 className='text-xl my-2'>Learn more about us from:</h3>
-                <div className='flex my-2 gap-8'>
+                <div className='flex my-2 gap-16'>
                     <a href="https://www.facebook.com/CllpoolCompany" className='text-3xl hover:scale-125 hover:text-sky-500 transition-all duration-300'><FaFacebook /></a>
                     <a href="https://www.instagram.com/cllpool_company/?hl=en" className='text-3xl hover:scale-125 hover:text-orange-600 transition-all duration-300'><FaInstagram /></a>
                     <a href="https://www.youtube.com/channel/UCtD6FoJRzZLIh7kd5z0uZEA" className='text-3xl hover:scale-125 hover:text-red-600 transition-all duration-300'><FaYoutube /></a>
@@ -86,7 +86,7 @@ const Footer = () => {
             {/* third div */}
             <div className='w-1/3 px-8'>
                 <FooterTitle title={data.footerTitles.visitUs} />
-                <div className='w-full h-full my-4 mx-auto'>
+                <div className='w-11/12 h-48 my-4 mx-auto'>
                     <Map latitude={data.CLLPOOL_COORDINATES.latitude} longitude={data.CLLPOOL_COORDINATES.longitude} viewPort={viewPort} setViewPort={setViewPort} mapStyle='mapbox://styles/mapbox/light-v10' />
                 </div>
             </div>
