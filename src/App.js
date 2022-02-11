@@ -1,6 +1,5 @@
-import { Navbar, Header, AboutUs, ContactUs, Projects } from "./components"
+import { Navbar, Header, AboutUs, ContactUs, Projects, OurClients, Footer } from "./components"
 import 'mapbox-gl/dist/mapbox-gl.css'
-import OurClients from './components/ourClients/OurClients';
 
 const App = () => {
   return (
@@ -11,6 +10,7 @@ const App = () => {
       <Projects />
       <OurClients />
       <ContactUs />
+      <Footer />
     </>
   )
 }
