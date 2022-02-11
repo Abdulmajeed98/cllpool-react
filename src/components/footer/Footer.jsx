@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../assets/logo.svg'
+import { ReactComponent as Logo } from '../../assets/logo.svg'
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa"
 import { MdPhone, MdEmail } from "react-icons/md";
 import data from '../../data.json';
