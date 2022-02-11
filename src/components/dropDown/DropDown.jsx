@@ -10,7 +10,7 @@ const languages = [
 const DropDown = ({ navBgChange }) => {
     const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
     return (
-        <Listbox value={selectedLanguage} onChange={setSelectedLanguage} as={'div'} className={`relative flex flex-col justify-center text-white border border-white ${navBgChange ? 'bg-slate-700' : 'bg-transparent'}`}>
+        <Listbox value={selectedLanguage} onChange={setSelectedLanguage} as={'div'} className={`relative flex flex-col justify-center text-white border border-white bg-transparent`}>
             <Listbox.Button
                 className={'px-8 py-2'}>{selectedLanguage.lang}</Listbox.Button>
             <Transition
@@ -20,10 +20,10 @@ const DropDown = ({ navBgChange }) => {
                 leave="transition-opacity duration-500"
                 leaveFrom="opacity-100"
                 leaveTo="opacity-0">
-                <Listbox.Options className={`absolute top-12 flex flex-col w-full justify-center ${navBgChange ? 'bg-slate-700' : 'bg-transparent'} border border-white`}>
+                <Listbox.Options className={`absolute top-12 flex flex-col w-full justify-center ${navBgChange ? 'bg-sky-500' : 'bg-transparent'} border border-white`}>
                     {languages.map((language) => (
                         <Listbox.Option
-                            className={`cursor-pointer hover:bg-slate-400 hover:text-slate-700 transition-all duration-300 px-8 py-2`}
+                            className={`cursor-pointer hover:bg-sky-200 hover:text-sky-700 transition-all duration-300 px-8 py-2`}
                             key={language.id}
                             value={language}>
                             {language.lang}

@@ -1,6 +1,6 @@
 const ContactInfo = ({ icon, title, content, href, altContent, altHref, target, animation, titleSize }) => {
     return (
-        <div className="flex-1 flex items-center justify-center" style={{ textDecoration: 'none' }}>
+        <div className="flex-1 flex items-center justify-center">
             <span className={`flex-1 inline-block w-10 h-10 text-xl mx-4 ${animation}`}>{icon}</span>
             <div className="flex-4">
                 <h4 className={`py-1 ${titleSize} font-bold`}>{title}</h4>
