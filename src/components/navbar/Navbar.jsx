@@ -3,6 +3,7 @@ import { ReactComponent as Logo } from "../../assets/logo.svg";
 import NavLink from "./NavLink";
 import data from "../../data.json";
 import DropDown from "./../dropDown/DropDown";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [navBackground, setNavBackground] = useState(false);
@@ -27,6 +28,7 @@ const Navbar = () => {
       <div className="flex items-center gap-x-12 px-2 py-4">
         {navLinkData.map((element) => (<NavLink key={element.id} destination={element.destination} content={element.content} />))}
       </div>
+      <Link to={'#projects'}>projects</Link>
 
       <DropDown navBgChange={navBackground} />
     </nav>

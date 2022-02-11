@@ -1,6 +1,6 @@
-import { Navbar, Header, AboutUs, ContactUs, Projects, OurClients, Footer } from "./components"
+import { Navbar, Header, AboutUs, ContactUs, Projects, OurClients, Footer, ProjectsPage } from "./components"
 import 'mapbox-gl/dist/mapbox-gl.css'
-import { Routes, Route, Link } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 
 const App = () => {
   return (
@@ -12,6 +12,9 @@ const App = () => {
       <OurClients />
       <ContactUs />
       <Footer />
+      <Routes>
+        <Route path="/projects" element={<ProjectsPage />} />
+      </Routes>
     </>
   )
 }
