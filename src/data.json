@@ -1,4 +1,36 @@
 {
+  "ServiceCards": [
+    {
+      "cardId": 1,
+      "cardTitle": "swimming pool",
+      "cardDescription": "card description goes here lorem ipsum dorum"
+    },
+    {
+      "cardId": 2,
+      "cardTitle": "show pool",
+      "cardDescription": "card description goes here lorem ipsum dorum"
+    },
+    {
+      "cardId": 3,
+      "cardTitle": "sauna",
+      "cardDescription": "card description goes here lorem ipsum dorum"
+    },
+    {
+      "cardId": 4,
+      "cardTitle": "designing",
+      "cardDescription": "card description goes here lorem ipsum dorum fodjgodfi gfdojgodfi fsjdfosdfijsdf"
+    },
+    {
+      "cardId": 5,
+      "cardTitle": "jacuzzi",
+      "cardDescription": "card description goes here lorem ipsum dorum"
+    },
+    {
+      "cardId": 6,
+      "cardTitle": "turkish bath",
+      "cardDescription": "card description goes here lorem ipsum dorum"
+    }
+  ],
   "formFields": [
     {
       "id": "name",

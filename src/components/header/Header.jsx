@@ -1,5 +1,5 @@
 import VideoHeader from '../../assets/videos/header-video.mp4'
-import downArrow from '../../assets/icons/down-arrow.png'
+import ArrowDown from '../../assets/icons/arrow-down.svg'
 
 const Header = () => {
     return (
@@ -18,7 +18,7 @@ const Header = () => {
             </div>
 
             <a href='#about' className='w-14 h-14 mb-8 animate-bounce'>
-                <img src={downArrow} alt="arrow down icon" className='w-full h-full' />
+                <img src={ArrowDown} alt="arrow down icon" className='w-full h-full' />
             </a>
         </header>
     )
