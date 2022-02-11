@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactMapGL, { Marker } from "react-map-gl";
 import { FaMapMarkerAlt } from "react-icons/fa"
 
-const Map = ({ viewPort, setViewPort, latitude, longitude, mapStyle = '' }) => {
+const Map = ({ latitude, longitude, mapStyle = '' }) => {
+    const [viewPort, setViewPort] = useState({
+        latitude,
+        longitude,
+        zoom: 15.5,
+        maxZoom: 16,
+        minZoom: 15,
+    });
     return <ReactMapGL
         ReactMapGL
         {...viewPort}
