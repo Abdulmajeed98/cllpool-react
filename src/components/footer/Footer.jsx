@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ReactComponent as Logo } from '../../assets/logo.svg'
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa"
 import { MdPhone, MdEmail } from "react-icons/md";
@@ -23,15 +23,8 @@ const icons = [
 ];
 
 const Footer = () => {
-    const currentDate = new Date()
+    const currentYear = new Date().getFullYear()
     const contactUsData = data.contactInfoData.slice(0, -1);
-    const [viewPort, setViewPort] = useState({
-        latitude: data.CLLPOOL_COORDINATES.latitude,
-        longitude: data.CLLPOOL_COORDINATES.longitude,
-        zoom: 15.5,
-        maxZoom: 16,
-        minZoom: 15,
-    });
 
 
     return <footer className='px-sides pt-16 pb-4 text-white bg-slate-700'>
@@ -87,13 +80,13 @@ const Footer = () => {
             <div className='w-1/3 px-16'>
                 <FooterTitle title={data.footerTitles.visitUs} />
                 <div className='w-11/12 h-48 my-4 mx-auto'>
-                    <Map latitude={data.CLLPOOL_COORDINATES.latitude} longitude={data.CLLPOOL_COORDINATES.longitude} viewPort={viewPort} setViewPort={setViewPort} mapStyle='mapbox://styles/mapbox/light-v10' />
+                    <Map latitude={data.CLLPOOL_COORDINATES.latitude} longitude={data.CLLPOOL_COORDINATES.longitude} mapStyle='mapbox://styles/mapbox/light-v10' />
                 </div>
             </div>
         </div>
         <center>
             <p className='mt-10 text-lg font-light opacity-50 uppercase'>
-                {data.CLLPOOL_COPYRIGHT.firstPart} &copy; {currentDate.getFullYear()} {data.CLLPOOL_COPYRIGHT.secondPart}
+                {data.CLLPOOL_COPYRIGHT.firstPart} &copy; {currentYear} {data.CLLPOOL_COPYRIGHT.secondPart}
             </p>
         </center>
     </footer>;
