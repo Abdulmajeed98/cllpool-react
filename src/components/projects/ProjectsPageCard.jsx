@@ -2,7 +2,6 @@
 import React from 'react'
 
 const ProjectsPageCard = ({ projectName, projectImg }) => {
-    console.log(projectImg);
     return (
         <div className='relative group h-96 rounded-xl shadow-lg overflow-hidden'>
             <img src={projectImg} alt="project" className='w-full h-full rounded-xl absolute inset-0 -z-10' />
