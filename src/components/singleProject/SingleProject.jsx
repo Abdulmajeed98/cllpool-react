@@ -37,28 +37,28 @@ const SingleProject = (props) => {
               <img
                 src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"
                 alt="Image 1"
-                className="h-96"
+                className="h-128"
               />
             </SplideSlide>
             <SplideSlide className="overflow-hidden rounded-xl">
               <img
                 src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"
                 alt="Image 1"
-                className="h-96"
+                className="h-128"
               />
             </SplideSlide>
             <SplideSlide className="overflow-hidden rounded-xl">
               <img
                 src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"
                 alt="Image 1"
-                className="h-96"
+                className="h-128"
               />
             </SplideSlide>
             <SplideSlide className="overflow-hidden rounded-xl">
               <img
                 src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"
                 alt="Image 1"
-                className="h-96"
+                className="h-128"
               />
             </SplideSlide>
           </Splide>
