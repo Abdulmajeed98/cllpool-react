@@ -16,3 +16,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+.splide__track {
+  @apply overflow-hidden rounded-xl;
+}
