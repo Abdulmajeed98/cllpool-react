@@ -1,10 +1,11 @@
 import data from "../../data.json";
+import SectionTitle from "../global/SectionTitle";
 import Map from "./Map";
 
 const VisitUs = () => {
   return (
     <>
-      <h2 className="text-6xl text-center py-4 mt-4"> Visit Us</h2>
+      <SectionTitle title={'visit us'} />
 
       {/* map component */}
       <div className="w-full h-128">

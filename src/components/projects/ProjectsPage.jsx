@@ -1,14 +1,14 @@
 import React from "react";
 import ProjectsPageCard from "./ProjectsPageCard";
 import data from "../../data.json";
+import SectionTitle from "../global/SectionTitle";
 const ProjectsPage = () => {
+  const projectsData = data.projectsData;
   return (
     <div className="mt-nav-offset px-sides py-8">
-      <h2 className="mb-8 text-center text-4xl capitalize">
-        Explore all our projects
-      </h2>
+      <SectionTitle title={'Explore all our projects'} />
       <div className="grid grid-cols-4 gap-x-4 gap-y-8">
-        {data.projectsData.map((element) => (
+        {projectsData.map((element) => (
           <ProjectsPageCard
             key={element.id}
             projectId={element.id}

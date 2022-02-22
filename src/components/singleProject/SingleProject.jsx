@@ -7,7 +7,7 @@ import "@splidejs/splide/dist/css/themes/splide-skyblue.min.css";
 import ProjectsPageCard from "../projects/ProjectsPageCard";
 import data from "../../data.json";
 
-const SingleProject = (props) => {
+const SingleProject = () => {
   const { projectId } = useParams();
 
   console.log(projectId);

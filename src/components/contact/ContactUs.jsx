@@ -4,6 +4,7 @@ import ContactInfo from "./ContactInfo";
 import { MdPhone, MdEmail } from "react-icons/md";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import data from "../../data.json";
+import SectionTitle from "../global/SectionTitle";
 
 const icons = [
   {
@@ -25,10 +26,10 @@ const icons = [
 
 const ContactUs = () => {
   return (
-    <section className="flex flex-col scroll-mt-nav-offset" id="contact-us">
+    <section className="flex flex-col scroll-mt-nav-offset py-8" id="contact-us">
       <VisitUs />
       <div className="flex flex-col mt-4 py-4 gap-8">
-        <h2 className="text-6xl text-center">Contact Us</h2>
+        <SectionTitle title={'contact us'} />
         <form className="px-sides">
           <div className="flex gap-4">
             {data?.formFields.map((field) => {
