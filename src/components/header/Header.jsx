@@ -1,11 +1,12 @@
-import VideoHeader from '../../assets/videos/header-video.mp4'
-import ArrowDown from '../../assets/icons/arrow-down.svg'
-
+import { lazy, Suspense } from 'react';
+import ArrowDown from '../../assets/icons/arrow-down.svg';
+const HeaderVideo = lazy(() => import('./HeaderVideo'));
 const Header = () => {
     return (
         <header className="relative bg-black bg-opacity-50 w-screen h-screen flex flex-col justify-between items-center" id='home'>
-            <video src={VideoHeader} autoPlay muted loop className='absolute object-fill w-full h-full -z-10'></video>
-
+            <Suspense fallback={<div className='w-full h-full text-6xl text-red-600'>Loading</div>}>
+                <HeaderVideo />
+            </Suspense>
             <div className='flex flex-col flex-4 justify-center items-center gap-4 pt-8 w-full text-white'>
                 <h1 className='text-center text-7xl'>
                     Swim better with us,<br />
