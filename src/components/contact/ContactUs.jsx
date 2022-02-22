@@ -45,7 +45,7 @@ const ContactUs = () => {
             })}
           </div>
           <div className="mt-8">
-            <label htmlFor="message" className="capitalize w-full">
+            <label htmlFor="message" className="capitalize font-bold w-full">
               Message
             </label>
             <textarea
