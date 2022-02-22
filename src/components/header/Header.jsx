@@ -19,7 +19,7 @@ const Header = () => {
             </div>
 
             <a href='#about' className='w-14 h-14 mb-8 animate-bounce'>
-                <img src={ArrowDown} alt="arrow down icon" className='w-full h-full' />
+                <img width={40} height={40} src={ArrowDown} alt="arrow down icon" className='w-full h-full' />
             </a>
         </header>
     )
