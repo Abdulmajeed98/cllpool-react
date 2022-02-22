@@ -47,7 +47,7 @@ const Footer = () => {
                 <div className='flex-1'>
                     <FooterTitle title={data.footerTitles.quickLinks} />
                     <div className='flex flex-col gap-1 mt-4'>
-                        {data.navLinks.map(element => (<QuickLink key={element.id} dest={element.destination} content={element.content} />))}
+                        {data.navLinks.map(element => (<QuickLink key={element.id} dest={element.destination} content={element.content} type={element.type} />))}
                     </div>
                 </div>
                 <div className='flex-1'>
