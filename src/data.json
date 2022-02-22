@@ -147,28 +147,32 @@
   "navLinks": [
     {
       "id": 1,
-      "destination": "home",
-      "content": "home"
+      "destination": "/#home",
+      "content": "home",
+      "type": "hash"
     },
     {
       "id": 2,
-      "destination": "about",
-      "content": "about"
+      "destination": "/#about",
+      "content": "about",
+      "type": "hash"
     },
     {
       "id": 3,
-      "destination": "projects",
+      "destination": "/projects",
       "content": "projects"
     },
     {
       "id": 4,
-      "destination": "clients",
-      "content": "our client"
+      "destination": "/#clients",
+      "content": "our client",
+      "type": "hash"
     },
     {
       "id": 5,
-      "destination": "contact-us",
-      "content": "contact us"
+      "destination": "/#contact-us",
+      "content": "contact us",
+      "type": "hash"
     }
   ],
 

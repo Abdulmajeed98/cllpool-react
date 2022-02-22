@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [navBackground, setNavBackground] = useState(false);
-  const navLinkData = data.navLinks;
+  const navLinksData = data.navLinks;
   const location = useLocation();
   const pathname = location.pathname;
 
@@ -26,7 +26,7 @@ const Navbar = () => {
         <Logo className='w-full h-full fill-white ' />
       </a>
       <div className="flex items-center gap-x-12 px-2 py-4">
-        {navLinkData.map((element) => (<NavLink key={element.id} destination={element.destination} content={element.content} />))}
+        {navLinksData.map((element) => (<NavLink key={element.id} destination={element.destination} content={element.content} type={element.type} />))}
       </div>
 
       <DropDown navBgChange={navBackground} />

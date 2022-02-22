@@ -59,7 +59,7 @@ const ContactUs = () => {
 
           <div className="flex justify-center items-center mt-8">
             <button
-              className="w-1/5 py-4 text-2xl uppercase text-white border-2 border-slate-700 bg-slate-700 rounded-lg hover:rounded-3xl hover:text-slate-700 hover:border-slate-700 hover:bg-transparent transition-all duration-400"
+              className="w-1/5 py-4 text-2xl uppercase text-white border-2 border-sky-600 bg-sky-600 rounded-lg hover:rounded-3xl hover:text-sky-600 hover:border-sky-600 hover:shadow-lg hover:shadow-sky-300 hover:bg-transparent transition-all duration-400"
               type="submit"
             >
               Submit
