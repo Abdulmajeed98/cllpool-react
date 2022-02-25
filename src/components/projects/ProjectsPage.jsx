@@ -7,7 +7,7 @@ const ProjectsPage = () => {
   window.scrollTo(0, 0);
   return (
     <div className="mt-nav-offset px-sides py-8">
-      <SectionTitle title={'Explore all our projects'} />
+      <SectionTitle title={"Explore all our projects"} />
       <div className="grid grid-cols-4 gap-x-4 gap-y-8">
         {projectsData.map((element) => (
           <ProjectsPageCard

@@ -6,7 +6,7 @@ const ClientBrand = ({ logo, alt }) => {
         height={100}
         src={logo}
         alt={alt}
-        className="w-full h-full object-fill group-hover:animate-pulse"
+        className="h-full w-full object-fill group-hover:animate-pulse"
       />
     </div>
   );

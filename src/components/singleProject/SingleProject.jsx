@@ -12,13 +12,11 @@ const SingleProject = () => {
   window.scrollTo(0, 0);
 
   return (
-    <div className="mt-nav-offset px-sides flex flex-col p-10">
+    <div className="mt-nav-offset flex flex-col p-10 px-sides">
       <div className="flex justify-between">
         <div className="flex-1">
-          <h2 className="mb-8 text-center text-4xl capitalize">
-            Project Name
-          </h2>
-          <p className="mb-8 text-xl text-justify">
+          <h2 className="mb-8 text-center text-4xl capitalize">Project Name</h2>
+          <p className="mb-8 text-justify text-xl">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
             nostrum hic, earum perspiciatis incidunt voluptatibus. Suscipit quae
             molestiae nihil voluptatibus sapiente fuga ex esse, quos aut nostrum

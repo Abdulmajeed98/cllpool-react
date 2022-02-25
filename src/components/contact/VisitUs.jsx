@@ -5,11 +5,15 @@ import Map from "./Map";
 const VisitUs = () => {
   return (
     <>
-      <SectionTitle title={'visit us'} />
+      <SectionTitle title={"visit us"} />
 
       {/* map component */}
-      <div className="w-full h-128">
-        <Map latitude={data.CLLPOOL_COORDINATES.latitude} longitude={data.CLLPOOL_COORDINATES.longitude} mapStyle='mapbox://styles/mapbox/dark-v10' />
+      <div className="h-128 w-full">
+        <Map
+          latitude={data.CLLPOOL_COORDINATES.latitude}
+          longitude={data.CLLPOOL_COORDINATES.longitude}
+          mapStyle="mapbox://styles/mapbox/dark-v10"
+        />
       </div>
     </>
   );
