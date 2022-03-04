@@ -6,7 +6,7 @@ import data from "../../data.json";
 import QuickLink from "./QuickLink";
 import ContactInfo from "../contact/ContactInfo";
 import FooterTitle from "./FooterTitle";
-import Map from "./../contact/Map";
+import CustomMap from "./../contact/CustomMap";
 
 const icons = [
   {
@@ -26,7 +26,7 @@ const Footer = () => {
   const contactUsData = data.contactInfoData.slice(0, -1);
 
   return (
-    <footer className="bg-slate-700 px-sides pt-16 pb-4 text-white">
+    <footer className="px-sides bg-slate-700 pt-16 pb-4 text-white">
       <div className="flex">
         {/* first div */}
         <div className="w-1/3">
@@ -100,7 +100,7 @@ const Footer = () => {
         <div className="w-1/3 px-16">
           <FooterTitle title={data.footerTitles.visitUs} />
           <div className="my-4 mx-auto h-48 w-11/12">
-            <Map
+            <CustomMap
               latitude={data.CLLPOOL_COORDINATES.latitude}
               longitude={data.CLLPOOL_COORDINATES.longitude}
               mapStyle="mapbox://styles/mapbox/light-v10"

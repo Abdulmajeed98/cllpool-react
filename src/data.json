@@ -126,7 +126,7 @@
       "icon": "address",
       "title": "Address",
       "content": "Holy Zard St, Erbil, Iraq, 44001",
-      "href": "https://www.google.com/maps/search/?api=1&query=36.19744914973062, 44.03855561035769",
+      "href": "https://www.google.com/maps/search/?api=1&query=36.197397, 44.038539",
       "altContent": "",
       "altHref": "",
       "target": "_blank",
@@ -134,8 +134,8 @@
     }
   ],
   "CLLPOOL_COORDINATES": {
-    "latitude": 36.197438,
-    "longitude": 44.038536
+    "latitude": 36.197397,
+    "longitude": 44.038539
   },
   "languages": [
     { "id": 1, "lang": "English", "abbr": "en" },
