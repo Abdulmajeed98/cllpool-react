@@ -15,7 +15,6 @@ const SingleProject = lazy(() =>
 );
 
 const App = () => {
-  console.log(<Navbar />);
   return (
     <Suspense
       fallback={
