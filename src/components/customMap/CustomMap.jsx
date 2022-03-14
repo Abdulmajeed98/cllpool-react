@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Map, { Marker } from "react-map-gl";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
-const MAPBOX_API_TOKEN =
-  "pk.eyJ1IjoiYWJkdWxtYWplZWQ5OCIsImEiOiJja3kyMWo0NzQwZ3h0MnFta3o4bXNvYm8zIn0.Oax22aSYClzq9b8nqa1sYw";
 const CustomMap = ({ latitude, longitude, mapStyle = "" }) => {
   const [viewPort, setViewPort] = useState({
     latitude,
@@ -15,7 +13,7 @@ const CustomMap = ({ latitude, longitude, mapStyle = "" }) => {
   return (
     <Map
       {...viewPort}
-      mapboxAccessToken={MAPBOX_API_TOKEN}
+      mapboxAccessToken={import.meta.env.VITE_MAPBOX_API_TOKEN}
       onMove={setViewPort}
       mapStyle={mapStyle}
       width={"100%"}

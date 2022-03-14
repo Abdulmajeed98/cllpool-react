@@ -1,6 +1,6 @@
 import data from "../../data.json";
 import SectionTitle from "../global/SectionTitle";
-import CustomMap from "./CustomMap";
+import CustomMap from "../customMap/CustomMap";
 
 const VisitUs = () => {
   return (

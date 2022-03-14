@@ -6,7 +6,7 @@ import data from "../../data.json";
 import QuickLink from "./QuickLink";
 import ContactInfo from "../contact/ContactInfo";
 import FooterTitle from "./FooterTitle";
-import CustomMap from "./../contact/CustomMap";
+import CustomMap from "../customMap/CustomMap";
 
 const icons = [
   {
@@ -26,7 +26,7 @@ const Footer = () => {
   const contactUsData = data.contactInfoData.slice(0, -1);
 
   return (
-    <footer className="px-sides bg-slate-700 pt-16 pb-4 text-white">
+    <footer className="bg-slate-700 px-sides pt-16 pb-4 text-white">
       <div className="flex">
         {/* first div */}
         <div className="w-1/3">
