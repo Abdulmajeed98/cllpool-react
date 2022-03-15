@@ -1,16 +1,32 @@
+import { useRef, useMemo, useEffect } from "react";
 import { lazy, Suspense } from "react";
 import ArrowDown from "../../assets/icons/arrow-down.svg";
 import { HashLink } from "react-router-hash-link";
+import useGetIntersectionState from "../../hooks/useGetIntersectionState";
+import { useAppContext } from "../../context/AppContext";
 const HeaderVideo = lazy(() => import("./HeaderVideo"));
+
 const Header = () => {
+  const intersectionOptions = useMemo(() => {
+    return { root: null, threshold: 0.95 };
+  }, []);
+  const headerRef = useRef();
+  const { setChangeNavbarBg } = useAppContext();
+  const isIntersected = useGetIntersectionState(intersectionOptions, headerRef);
+  useEffect(() => {
+    if (isIntersected === undefined) return;
+    setChangeNavbarBg(!isIntersected);
+    return;
+  }, [isIntersected]);
   return (
     <header
+      ref={headerRef}
       className="relative flex h-screen w-screen flex-col items-center justify-between bg-black bg-opacity-50"
       id="home"
     >
       <Suspense
         fallback={
-          <div className="absolute inset-0 -z-10 h-full w-full text-6xl text-red-600">
+          <div className="absolute inset-0 -z-10 grid h-full w-full place-items-center text-6xl text-red-600">
             Loading
           </div>
         }

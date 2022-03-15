@@ -1,32 +1,25 @@
-import { useState } from "react";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import NavLink from "./NavLink";
 import data from "../../data.json";
 import DropDown from "./../dropDown/DropDown";
 import { useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { useAppContext } from "../../context/AppContext";
 
 const Navbar = () => {
-  const [navBackground, setNavBackground] = useState(false);
   const navLinksData = data.navLinks;
   const location = useLocation();
-  const pathname = location.pathname;
-
-  const changeNavbarBackground = () => {
-    window.scrollY >= data.navbarHeight
-      ? setNavBackground(true)
-      : setNavBackground(false);
-  };
-  window.addEventListener("scroll", changeNavbarBackground);
+  const { pathname } = location;
+  const { navbarBg } = useAppContext();
   return (
     <nav
-      className={`fixed top-0 left-0 flex w-full items-center justify-between ${
+      className={`fixed top-0 left-0 z-max flex w-full items-center  justify-between px-sides py-2 ${
         !pathname.includes("/projects")
-          ? navBackground
+          ? navbarBg
             ? "bg-sky-500"
             : "bg-transparent"
           : "bg-sky-500"
-      } z-max px-sides py-2 transition-all duration-500`}
+      } transition-all duration-500`}
     >
       <HashLink to="/#home" className="h-24 w-44">
         <Logo className="h-full w-full fill-white " />
@@ -42,7 +35,7 @@ const Navbar = () => {
         ))}
       </div>
 
-      <DropDown navBgChange={navBackground} />
+      <DropDown />
     </nav>
   );
 };

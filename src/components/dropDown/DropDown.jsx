@@ -7,19 +7,20 @@ const languages = [
   { id: 4, lang: "Kurdish", abbr: "kr" },
 ];
 
-const DropDown = ({ navBgChange }) => {
+const DropDown = () => {
   const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
   return (
     <Listbox
       value={selectedLanguage}
       onChange={setSelectedLanguage}
       as={"div"}
-      className={`relative flex flex-col justify-center border border-white bg-transparent text-white`}
+      className={`relative flex flex-col justify-center border border-white bg-inherit text-white`}
     >
-      <Listbox.Button className={"px-8 py-2"}>
+      <Listbox.Button className={"bg-inherit px-8 py-2"}>
         {selectedLanguage.lang}
       </Listbox.Button>
       <Transition
+        className={"bg-inherit"}
         enter="transition-opacity duration-500"
         enterFrom="opacity-0"
         enterTo="opacity-100"
@@ -28,9 +29,7 @@ const DropDown = ({ navBgChange }) => {
         leaveTo="opacity-0"
       >
         <Listbox.Options
-          className={`absolute top-12 flex w-full flex-col justify-center ${
-            navBgChange ? "bg-sky-500" : "bg-transparent"
-          } border border-white`}
+          className={`absolute top-12 flex w-full flex-col justify-center border border-white bg-inherit`}
         >
           {languages.map((language) => (
             <Listbox.Option

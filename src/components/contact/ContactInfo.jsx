@@ -25,7 +25,7 @@ const ContactInfo = ({
           className="w-fit underline-offset-2 transition-all duration-300 hover:text-sky-500 hover:underline hover:decoration-sky-500"
         >
           {content}
-        </a>{" "}
+        </a>
         <br />
         {altHref && (
           <a
