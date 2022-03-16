@@ -15,8 +15,7 @@ const Header = () => {
   const isIntersected = useGetIntersectionState(intersectionOptions, headerRef);
   useEffect(() => {
     if (isIntersected === undefined) return;
-    setChangeNavbarBg(!isIntersected);
-    return;
+    return setChangeNavbarBg(!isIntersected);
   }, [isIntersected]);
   return (
     <header
