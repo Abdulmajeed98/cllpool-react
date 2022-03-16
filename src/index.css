@@ -7,11 +7,11 @@
 
 html,
 body {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  @apply text-lg;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    @apply text-lg;
 }
 
 .splide__track {
-  @apply overflow-hidden rounded-xl;
+    @apply overflow-hidden rounded-xl;
 }

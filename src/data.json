@@ -1,189 +1,189 @@
 {
-  "projectsData": [
-    {
-      "id": 1,
-      "name": "project name",
-      "img": "https://www.cllpooliraq.com/images/img1.jpg"
+    "projectsData": [
+        {
+            "id": 1,
+            "name": "project name",
+            "img": "https://www.cllpooliraq.com/images/img1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "project name",
+            "img": "https://www.cllpooliraq.com/images/img1.jpg"
+        },
+        {
+            "id": 3,
+            "name": "project name",
+            "img": "https://www.cllpooliraq.com/images/img1.jpg"
+        },
+        {
+            "id": 4,
+            "name": "project name",
+            "img": "https://www.cllpooliraq.com/images/img1.jpg"
+        },
+        {
+            "id": 5,
+            "name": "project name",
+            "img": "https://www.cllpooliraq.com/images/img1.jpg"
+        },
+        {
+            "id": 6,
+            "name": "project name",
+            "img": "https://www.cllpooliraq.com/images/img1.jpg"
+        },
+        {
+            "id": 7,
+            "name": "project name",
+            "img": "https://www.cllpooliraq.com/images/img1.jpg"
+        },
+        {
+            "id": 8,
+            "name": "project name",
+            "img": "https://www.cllpooliraq.com/images/img1.jpg"
+        },
+        {
+            "id": 9,
+            "name": "project name",
+            "img": "https://www.cllpooliraq.com/images/img1.jpg"
+        }
+    ],
+    "ServiceCards": [
+        {
+            "cardId": 1,
+            "cardTitle": "swimming pool",
+            "cardDescription": "card description goes here lorem ipsum dorum"
+        },
+        {
+            "cardId": 2,
+            "cardTitle": "show pool",
+            "cardDescription": "card description goes here lorem ipsum dorum"
+        },
+        {
+            "cardId": 3,
+            "cardTitle": "sauna",
+            "cardDescription": "card description goes here lorem ipsum dorum"
+        },
+        {
+            "cardId": 4,
+            "cardTitle": "designing",
+            "cardDescription": "card description goes here lorem ipsum dorum fodjgodfi gfdojgodfi fsjdfosdfijsdf"
+        },
+        {
+            "cardId": 5,
+            "cardTitle": "jacuzzi",
+            "cardDescription": "card description goes here lorem ipsum dorum"
+        },
+        {
+            "cardId": 6,
+            "cardTitle": "turkish bath",
+            "cardDescription": "card description goes here lorem ipsum dorum"
+        }
+    ],
+    "formFields": [
+        {
+            "id": "name",
+            "title": "name",
+            "type": "text",
+            "placeholder": "Enter your name"
+        },
+        {
+            "id": "phone",
+            "title": "phone number",
+            "type": "text",
+            "placeholder": "Enter your phone number"
+        },
+        {
+            "id": "email",
+            "title": "email",
+            "type": "email",
+            "placeholder": "Enter your email address"
+        }
+    ],
+    "contactInfoData": [
+        {
+            "id": 1,
+            "icon": "phone",
+            "title": "Phones",
+            "content": "+964 750 496 7476",
+            "href": "tel:+9647504967476",
+            "altContent": "",
+            "altHref": "",
+            "target": "",
+            "animation": "animate-wiggle"
+        },
+        {
+            "id": 2,
+            "icon": "email",
+            "title": "Emails",
+            "content": "info@cllpooliraq.com",
+            "href": "mailto:info@cllpooliraq.com",
+            "altContent": "cllpool@hotmail.com",
+            "altHref": "mailto:cllpool@hotmail.com",
+            "target": "",
+            "animation": "animate-pulse"
+        },
+        {
+            "id": 3,
+            "icon": "address",
+            "title": "Address",
+            "content": "Holy Zard St, Erbil, Iraq, 44001",
+            "href": "https://www.google.com/maps/search/?api=1&query=36.197397, 44.038539",
+            "altContent": "",
+            "altHref": "",
+            "target": "_blank",
+            "animation": "animate-bouncing"
+        }
+    ],
+    "CLLPOOL_COORDINATES": {
+        "latitude": 36.197397,
+        "longitude": 44.038539
     },
-    {
-      "id": 2,
-      "name": "project name",
-      "img": "https://www.cllpooliraq.com/images/img1.jpg"
-    },
-    {
-      "id": 3,
-      "name": "project name",
-      "img": "https://www.cllpooliraq.com/images/img1.jpg"
-    },
-    {
-      "id": 4,
-      "name": "project name",
-      "img": "https://www.cllpooliraq.com/images/img1.jpg"
-    },
-    {
-      "id": 5,
-      "name": "project name",
-      "img": "https://www.cllpooliraq.com/images/img1.jpg"
-    },
-    {
-      "id": 6,
-      "name": "project name",
-      "img": "https://www.cllpooliraq.com/images/img1.jpg"
-    },
-    {
-      "id": 7,
-      "name": "project name",
-      "img": "https://www.cllpooliraq.com/images/img1.jpg"
-    },
-    {
-      "id": 8,
-      "name": "project name",
-      "img": "https://www.cllpooliraq.com/images/img1.jpg"
-    },
-    {
-      "id": 9,
-      "name": "project name",
-      "img": "https://www.cllpooliraq.com/images/img1.jpg"
-    }
-  ],
-  "ServiceCards": [
-    {
-      "cardId": 1,
-      "cardTitle": "swimming pool",
-      "cardDescription": "card description goes here lorem ipsum dorum"
-    },
-    {
-      "cardId": 2,
-      "cardTitle": "show pool",
-      "cardDescription": "card description goes here lorem ipsum dorum"
-    },
-    {
-      "cardId": 3,
-      "cardTitle": "sauna",
-      "cardDescription": "card description goes here lorem ipsum dorum"
-    },
-    {
-      "cardId": 4,
-      "cardTitle": "designing",
-      "cardDescription": "card description goes here lorem ipsum dorum fodjgodfi gfdojgodfi fsjdfosdfijsdf"
-    },
-    {
-      "cardId": 5,
-      "cardTitle": "jacuzzi",
-      "cardDescription": "card description goes here lorem ipsum dorum"
-    },
-    {
-      "cardId": 6,
-      "cardTitle": "turkish bath",
-      "cardDescription": "card description goes here lorem ipsum dorum"
-    }
-  ],
-  "formFields": [
-    {
-      "id": "name",
-      "title": "name",
-      "type": "text",
-      "placeholder": "Enter your name"
-    },
-    {
-      "id": "phone",
-      "title": "phone number",
-      "type": "text",
-      "placeholder": "Enter your phone number"
-    },
-    {
-      "id": "email",
-      "title": "email",
-      "type": "email",
-      "placeholder": "Enter your email address"
-    }
-  ],
-  "contactInfoData": [
-    {
-      "id": 1,
-      "icon": "phone",
-      "title": "Phones",
-      "content": "+964 750 496 7476",
-      "href": "tel:+9647504967476",
-      "altContent": "",
-      "altHref": "",
-      "target": "",
-      "animation": "animate-wiggle"
-    },
-    {
-      "id": 2,
-      "icon": "email",
-      "title": "Emails",
-      "content": "info@cllpooliraq.com",
-      "href": "mailto:info@cllpooliraq.com",
-      "altContent": "cllpool@hotmail.com",
-      "altHref": "mailto:cllpool@hotmail.com",
-      "target": "",
-      "animation": "animate-pulse"
-    },
-    {
-      "id": 3,
-      "icon": "address",
-      "title": "Address",
-      "content": "Holy Zard St, Erbil, Iraq, 44001",
-      "href": "https://www.google.com/maps/search/?api=1&query=36.197397, 44.038539",
-      "altContent": "",
-      "altHref": "",
-      "target": "_blank",
-      "animation": "animate-bouncing"
-    }
-  ],
-  "CLLPOOL_COORDINATES": {
-    "latitude": 36.197397,
-    "longitude": 44.038539
-  },
-  "languages": [
-    { "id": 1, "lang": "English", "abbr": "en" },
-    { "id": 2, "lang": "Turkish", "abbr": "tr" },
-    { "id": 3, "lang": "Arabic", "abbr": "ar" },
-    { "id": 4, "lang": "Kurdish", "abbr": "kr" }
-  ],
-  "navbarHeight": 112,
-  "navLinks": [
-    {
-      "id": 1,
-      "destination": "/#home",
-      "content": "home",
-      "type": "hash"
-    },
-    {
-      "id": 2,
-      "destination": "/#about",
-      "content": "about",
-      "type": "hash"
-    },
-    {
-      "id": 3,
-      "destination": "/projects",
-      "content": "projects"
-    },
-    {
-      "id": 4,
-      "destination": "/#clients",
-      "content": "our client",
-      "type": "hash"
-    },
-    {
-      "id": 5,
-      "destination": "/#contact-us",
-      "content": "contact us",
-      "type": "hash"
-    }
-  ],
+    "languages": [
+        { "id": 1, "lang": "English", "abbr": "en" },
+        { "id": 2, "lang": "Turkish", "abbr": "tr" },
+        { "id": 3, "lang": "Arabic", "abbr": "ar" },
+        { "id": 4, "lang": "Kurdish", "abbr": "kr" }
+    ],
+    "navbarHeight": 112,
+    "navLinks": [
+        {
+            "id": 1,
+            "destination": "/#home",
+            "content": "home",
+            "type": "hash"
+        },
+        {
+            "id": 2,
+            "destination": "/#about",
+            "content": "about",
+            "type": "hash"
+        },
+        {
+            "id": 3,
+            "destination": "/projects",
+            "content": "projects"
+        },
+        {
+            "id": 4,
+            "destination": "/#clients",
+            "content": "our client",
+            "type": "hash"
+        },
+        {
+            "id": 5,
+            "destination": "/#contact-us",
+            "content": "contact us",
+            "type": "hash"
+        }
+    ],
 
-  "CLLPOOL_COPYRIGHT": {
-    "firstPart": "copyright",
-    "secondPart": "CLLPOOL, All rights reserved."
-  },
+    "CLLPOOL_COPYRIGHT": {
+        "firstPart": "copyright",
+        "secondPart": "CLLPOOL, All rights reserved."
+    },
 
-  "footerTitles": {
-    "quickLinks": "quick links",
-    "contactUs": "contact us",
-    "visitUs": "visit our company"
-  }
+    "footerTitles": {
+        "quickLinks": "quick links",
+        "contactUs": "contact us",
+        "visitUs": "visit our company"
+    }
 }
