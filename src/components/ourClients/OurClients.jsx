@@ -1,5 +1,6 @@
 import EmpireLogo from "../../assets/empire-logo.svg";
 import SpotifyLogo from "../../assets/spotify-logo.svg";
+import SectionTitle from "../global/SectionTitle";
 import ClientBrand from "./ClientBrand";
 
 const clients = [
@@ -37,9 +38,12 @@ const clients = [
 
 const OurClients = () => {
   return (
-    <section className="bg-slate-700 text-white scroll-mt-nav-offset px-sides py-8" id="clients">
-      <h2 className="text-6xl capitalize text-center my-16">Our Clients</h2>
-      <div className="grid grid-cols-3 justify-items-center gap-x-4 gap-y-8 my-8">
+    <section
+      className="scroll-mt-nav-offset bg-slate-700 px-sides py-8 text-white"
+      id="clients"
+    >
+      <SectionTitle title={"our clients"} />
+      <div className="my-8 grid grid-cols-3 justify-items-center gap-x-4 gap-y-8">
         {clients.map((client) => (
           <ClientBrand key={client.id} logo={client.logo} alt={client.alt} />
         ))}

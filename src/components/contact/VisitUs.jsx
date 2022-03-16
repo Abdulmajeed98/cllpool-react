@@ -1,14 +1,19 @@
 import data from "../../data.json";
-import Map from "./Map";
+import SectionTitle from "../global/SectionTitle";
+import CustomMap from "../customMap/CustomMap";
 
 const VisitUs = () => {
   return (
     <>
-      <h2 className="text-6xl text-center py-4 mt-4"> Visit Us</h2>
+      <SectionTitle title={"visit us"} />
 
       {/* map component */}
-      <div className="w-full h-128">
-        <Map latitude={data.CLLPOOL_COORDINATES.latitude} longitude={data.CLLPOOL_COORDINATES.longitude} mapStyle='mapbox://styles/mapbox/dark-v10' />
+      <div className="h-128 w-full">
+        <CustomMap
+          latitude={data.CLLPOOL_COORDINATES.latitude}
+          longitude={data.CLLPOOL_COORDINATES.longitude}
+          mapStyle="mapbox://styles/mapbox/dark-v10"
+        />
       </div>
     </>
   );

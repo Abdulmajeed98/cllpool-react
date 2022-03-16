@@ -1,32 +1,41 @@
-import { useState } from "react";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import NavLink from "./NavLink";
 import data from "../../data.json";
 import DropDown from "./../dropDown/DropDown";
-
+import { useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import { useAppContext } from "../../context/AppContext";
 
 const Navbar = () => {
-  const [navBackground, setNavBackground] = useState(false);
-  const navLinkData = data.navLinks;
-
-  const changeNavbarBackground = () => {
-    window.scrollY >= data.navbarHeight
-      ? setNavBackground(true)
-      : setNavBackground(false);
-  };
-  window.addEventListener("scroll", changeNavbarBackground);
+  const navLinksData = data.navLinks;
+  const location = useLocation();
+  const { pathname } = location;
+  const { navbarBg } = useAppContext();
   return (
     <nav
-      className={`fixed top-0 left-0 w-full flex items-center justify-between ${false ? navBackground ? 'bg-sky-500' : 'bg-transparent' : 'bg-sky-500'} px-sides py-2 z-max transition-all duration-500`}
+      className={`fixed top-0 left-0 z-max flex w-full items-center  justify-between px-sides py-2 ${
+        !pathname.includes("/projects")
+          ? navbarBg
+            ? "bg-sky-500"
+            : "bg-transparent"
+          : "bg-sky-500"
+      } transition-all duration-500`}
     >
-      <a href="#home" className="w-44 h-24">
-        <Logo className='w-full h-full fill-white ' />
-      </a>
+      <HashLink to="/#home" className="h-24 w-44">
+        <Logo className="h-full w-full fill-white " />
+      </HashLink>
       <div className="flex items-center gap-x-12 px-2 py-4">
-        {navLinkData.map((element) => (<NavLink key={element.id} destination={element.destination} content={element.content} />))}
+        {navLinksData.map((element) => (
+          <NavLink
+            key={element.id}
+            destination={element.destination}
+            content={element.content}
+            type={element.type}
+          />
+        ))}
       </div>
 
-      <DropDown navBgChange={navBackground} />
+      <DropDown />
     </nav>
   );
 };

@@ -1,20 +1,15 @@
+/* !Font Family  */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* !Font Family  */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
-
-/* html {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-*/
 
 html,
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  @apply text-lg;
 }
 
 .splide__track {
