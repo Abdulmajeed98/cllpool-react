@@ -40,6 +40,8 @@ module.exports = {
       animation: {
         wiggle: "wiggle 2s ease-in-out infinite",
         bouncing: "bouncing 3s ease-out infinite",
+        "text-blur-out": "text-blur-out 2.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite",
+        "circular-color": "circular-color 2.5s linear infinite",
       },
 
       keyframes: {
@@ -50,6 +52,28 @@ module.exports = {
         bouncing: {
           "0%": { transform: "translateY(0)" },
           "30%": { transform: "translateY(-7px)" },
+        },
+        "text-blur-out": {
+          "0%": {
+            filter: "blur(0.01)",
+          },
+          "50%": {
+            filter: "blur(5px) opacity(0%)",
+          },
+        },
+        "circular-color": {
+          "0%": {
+            transform: "rotate(0deg)",
+            boxShadow: "1px 5px 2px #0369a1",
+          },
+          "50%": {
+            transform: "rotate(180deg)",
+            boxShadow: "1px 5px 2px #0e7490",
+          },
+          "100%": {
+            transform: "rotate(360deg)",
+            boxShadow: "1px 5px 2px #1d4ed8",
+          },
         },
       },
 
@@ -65,6 +89,10 @@ module.exports = {
       minHeight: {
         "1/2": "50%",
         "message-textarea": "17.125rem",
+      },
+      boxShadow: {
+        "loading-ring": "0 0 5px rgba(0, 0, 0, 0.3)",
+        "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
       },
     },
   },
