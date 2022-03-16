@@ -14,39 +14,32 @@ const ProjectsPage = lazy(() => import("./components/projects/ProjectsPage"));
 const SingleProject = lazy(() => import("./components/singleProject/SingleProject"));
 
 const App = () => {
-    return (
-        <StateProvider>
-            <Suspense
-                fallback={
-                    <LoadingIndicator
-                        classes={
-                            "flex justify-center items-center w-screen h-screen text-4xl gap-8"
-                        }
-                    />
-                }>
-                <Navbar />
-                <Routes>
-                    <Route path="/">
-                        <Route
-                            index
-                            element={
-                                <>
-                                    <Header />
-                                    <AboutUs />
-                                    <Projects />
-                                    <OurClients />
-                                    <ContactUs />
-                                </>
-                            }
-                        />
-                        <Route path="/projects" element={<ProjectsPage />} />
-                        <Route path="/projects/:projectId" element={<SingleProject />} />
-                    </Route>
-                </Routes>
-                <Footer />
-            </Suspense>
-        </StateProvider>
-    );
+  return (
+    <StateProvider>
+      <Suspense fallback={<LoadingIndicator classes={"flex justify-center items-center w-screen h-screen text-4xl gap-8"} />}>
+        <Navbar />
+        <Routes>
+          <Route path="/">
+            <Route
+              index
+              element={
+                <>
+                  <Header />
+                  <AboutUs />
+                  <Projects />
+                  <OurClients />
+                  <ContactUs />
+                </>
+              }
+            />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/projects/:projectId" element={<SingleProject />} />
+          </Route>
+        </Routes>
+        <Footer />
+      </Suspense>
+    </StateProvider>
+  );
 };
 
 export default App;

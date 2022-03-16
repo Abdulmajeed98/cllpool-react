@@ -14,8 +14,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-
-
 ### `yarn build`
 
 Builds the app for production to the `dist` folder.\
@@ -25,9 +23,10 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://vitejs.dev/guide/static-deploy.html#testing-the-app-locally) for more information.
+
 ### `yarn preview`
 
-This command will boot up local static web server that serves the files from `dist` at `http://localhost:4173`. 
+This command will boot up local static web server that serves the files from `dist` at `http://localhost:4173`.
 It's an easy way to check if the production build looks OK in your local environment.
 
 See the section about [deployment](https://vitejs.dev/guide/static-deploy.html#testing-the-app-locally) for more information.
@@ -57,4 +56,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 ### Deployment
 
 The Deployment with Vite App: [https://vitejs.dev/guide/static-deploy.html#deploying-a-static-site](https://vitejs.dev/guide/static-deploy.html#deploying-a-static-site)
-

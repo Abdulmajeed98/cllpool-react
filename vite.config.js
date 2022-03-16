@@ -3,13 +3,13 @@ import react from "@vitejs/plugin-react";
 import svgrPlugin from "vite-plugin-svgr";
 // https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [
-        react(),
-        svgrPlugin({
-            memo: true,
-            icon: true,
-            svgoConfig: { removeViewBox: false },
-            enforce: "pre",
-        }),
-    ],
+  plugins: [
+    react(),
+    svgrPlugin({
+      memo: true,
+      icon: true,
+      svgoConfig: { removeViewBox: false },
+      enforce: "pre",
+    }),
+  ],
 });
