@@ -38,10 +38,7 @@ const clients = [
 
 const OurClients = () => {
   return (
-    <section
-      className="scroll-mt-nav-offset bg-slate-700 px-sides py-8 text-white"
-      id="clients"
-    >
+    <section className="scroll-mt-nav-offset bg-slate-700 px-sides py-8 text-white" id="clients">
       <SectionTitle title={"our clients"} />
       <div className="my-8 grid grid-cols-3 justify-items-center gap-x-4 gap-y-8">
         {clients.map((client) => (

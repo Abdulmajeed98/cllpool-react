@@ -35,22 +35,17 @@ const Footer = () => {
           </div>
           <h3 className="my-2 text-xl">Learn more about us from:</h3>
           <div className="my-2 flex gap-16">
-            <a
-              href="https://www.facebook.com/CllpoolCompany"
-              className="text-3xl transition-all duration-300 hover:scale-125 hover:text-sky-500"
-            >
+            <a href="https://www.facebook.com/CllpoolCompany" className="text-3xl transition-all duration-300 hover:scale-125 hover:text-sky-500">
               <FaFacebook />
             </a>
             <a
               href="https://www.instagram.com/cllpool_company/?hl=en"
-              className="text-3xl transition-all duration-300 hover:scale-125 hover:text-orange-600"
-            >
+              className="text-3xl transition-all duration-300 hover:scale-125 hover:text-orange-600">
               <FaInstagram />
             </a>
             <a
               href="https://www.youtube.com/channel/UCtD6FoJRzZLIh7kd5z0uZEA"
-              className="text-3xl transition-all duration-300 hover:scale-125 hover:text-red-600"
-            >
+              className="text-3xl transition-all duration-300 hover:scale-125 hover:text-red-600">
               <FaYoutube />
             </a>
           </div>
@@ -62,12 +57,7 @@ const Footer = () => {
             <FooterTitle title={data.footerTitles.quickLinks} />
             <div className="mt-4 flex flex-col gap-1">
               {data.navLinks.map((element) => (
-                <QuickLink
-                  key={element.id}
-                  dest={element.destination}
-                  content={element.content}
-                  type={element.type}
-                />
+                <QuickLink key={element.id} dest={element.destination} content={element.content} type={element.type} />
               ))}
             </div>
           </div>
@@ -77,12 +67,7 @@ const Footer = () => {
               {contactUsData.map((element) => (
                 <ContactInfo
                   key={element.id}
-                  icon={
-                    icons.find(
-                      (icon) =>
-                        icon.name === element.icon || icon.id === element.icon
-                    ).icon
-                  }
+                  icon={icons.find((icon) => icon.name === element.icon || icon.id === element.icon).icon}
                   title={element.title}
                   content={element.content}
                   href={element.href}
@@ -110,8 +95,7 @@ const Footer = () => {
       </div>
       <center>
         <p className="mt-10 text-lg font-light uppercase opacity-50">
-          {data.CLLPOOL_COPYRIGHT.firstPart} &copy; {currentYear}{" "}
-          {data.CLLPOOL_COPYRIGHT.secondPart}
+          {data.CLLPOOL_COPYRIGHT.firstPart} &copy; {currentYear} {data.CLLPOOL_COPYRIGHT.secondPart}
         </p>
       </center>
     </footer>

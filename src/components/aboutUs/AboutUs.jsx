@@ -1,12 +1,5 @@
 import ServiceCard from "./ServiceCard";
-import {
-  Jacuzzi,
-  SwimmingPool,
-  Sauna,
-  TurkishBath,
-  ShowPool,
-  Designing,
-} from "../../assets/icons";
+import { Jacuzzi, SwimmingPool, Sauna, TurkishBath, ShowPool, Designing } from "../../assets/icons";
 import data from "../../data.json";
 import SectionTitle from "../global/SectionTitle";
 
@@ -45,17 +38,12 @@ const icons = [
 
 const AboutUs = () => {
   return (
-    <section
-      className="flex scroll-mt-nav-offset flex-col items-center gap-8 px-sides py-8"
-      id="about"
-    >
+    <section className="flex scroll-mt-nav-offset flex-col items-center gap-8 px-sides py-8" id="about">
       <SectionTitle title={"Who are we ?"} />
       <p className="w-2/3 text-center text-xl">
-        Lorem ipsum dolor sit amet, cossectetur adipisicing elit. Porro
-        reiciendis nostrum non illo iste rerum ad eos officia dolor et voluptas
-        magnam impedit suscipit quis soluta optio veniam ut sapiente ducimus
-        inventore itaque eveniet magni, enim harum. Iure perspiciatis, possimus
-        quia suscipit autem hic atque, fugiat quam quos maiores eligendi.
+        Lorem ipsum dolor sit amet, cossectetur adipisicing elit. Porro reiciendis nostrum non illo iste rerum ad eos officia dolor et voluptas magnam
+        impedit suscipit quis soluta optio veniam ut sapiente ducimus inventore itaque eveniet magni, enim harum. Iure perspiciatis, possimus quia
+        suscipit autem hic atque, fugiat quam quos maiores eligendi.
       </p>
       <SectionTitle title={"Services"} />
       <div className="grid w-full grid-cols-1 justify-items-center gap-y-8 md:grid-cols-2 lg:grid-cols-3">

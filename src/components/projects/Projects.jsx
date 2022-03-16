@@ -9,11 +9,7 @@ const Projects = () => {
       <SectionTitle title={"Projects"} />
       <div className="grid grid-cols-3 justify-items-center overflow-hidden">
         {projectsData.map((project) => (
-          <ProjectCard
-            key={project.id}
-            title={project.name}
-            img={project.img}
-          />
+          <ProjectCard key={project.id} title={project.name} img={project.img} />
         ))}
       </div>
     </section>

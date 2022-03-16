@@ -17,8 +17,7 @@ const CustomMap = ({ latitude, longitude, mapStyle = "" }) => {
       onMove={setViewPort}
       mapStyle={mapStyle}
       width={"100%"}
-      height={"100%"}
-    >
+      height={"100%"}>
       <Marker
         latitude={latitude}
         longitude={longitude}
@@ -31,12 +30,8 @@ const CustomMap = ({ latitude, longitude, mapStyle = "" }) => {
           cursor: "pointer",
         }}
         onClick={() => {
-          window.open(
-            "https://www.google.com/maps/search/?api=1&query=36.197397, 44.038539",
-            "_blank"
-          );
-        }}
-      >
+          window.open("https://www.google.com/maps/search/?api=1&query=36.197397, 44.038539", "_blank");
+        }}>
         <p className="text-sm text-sky-400">CLLPOOL Company</p>
         <FaMapMarkerAlt className="text-2xl text-sky-400" />
       </Marker>

@@ -10,13 +10,7 @@ const ProjectsPage = () => {
       <SectionTitle title={"Explore all our projects"} />
       <div className="grid grid-cols-4 gap-x-4 gap-y-8">
         {projectsData.map((element) => (
-          <ProjectsPageCard
-            key={element.id}
-            projectId={element.id}
-            projectName={element.name}
-            projectImg={element.img}
-            height="h-96"
-          />
+          <ProjectsPageCard key={element.id} projectId={element.id} projectName={element.name} projectImg={element.img} height="h-96" />
         ))}
       </div>
     </div>
