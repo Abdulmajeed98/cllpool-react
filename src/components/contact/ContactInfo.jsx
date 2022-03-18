@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 const ContactInfo = ({ icon, title, content, href, altContent, altHref, target, animation, titleSize }) => {
   return (
     <div className="flex flex-1 items-center justify-center">
@@ -15,6 +16,7 @@ const ContactInfo = ({ icon, title, content, href, altContent, altHref, target, 
         {altHref && (
           <a
             href={altHref}
+            target={target}
             className="w-fit underline-offset-2 transition-all duration-300 hover:text-sky-500 hover:underline hover:decoration-sky-500">
             {altContent}
           </a>
@@ -24,4 +26,15 @@ const ContactInfo = ({ icon, title, content, href, altContent, altHref, target, 
   );
 };
 
+ContactInfo.propTypes = {
+  icon: PropTypes.element,
+  title: PropTypes.string,
+  content: PropTypes.string,
+  href: PropTypes.string,
+  altHref: PropTypes.string,
+  altContent: PropTypes.string,
+  target: PropTypes.string,
+  animation: PropTypes.string,
+  titleSize: PropTypes.string,
+};
 export default ContactInfo;
