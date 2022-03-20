@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { MdPhone, MdEmail } from "react-icons/md";
@@ -22,7 +22,7 @@ const icons = [
 ];
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  const currentYear = useMemo(() => new Date().getFullYear(), []);
   const contactUsData = data.contactInfoData.slice(0, -1);
 
   return (
