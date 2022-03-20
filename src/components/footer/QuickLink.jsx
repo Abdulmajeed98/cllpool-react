@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import PropTypes from "prop-types";
 
 const QuickLink = ({ dest, content, type }) => {
   if (type === "hash") {
@@ -20,6 +21,12 @@ const QuickLink = ({ dest, content, type }) => {
       </Link>
     );
   }
+};
+
+QuickLink.propTypes = {
+  dest: PropTypes.string,
+  content: PropTypes.string,
+  type: PropTypes.string,
 };
 
 export default QuickLink;
