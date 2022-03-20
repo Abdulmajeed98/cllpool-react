@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const ProjectCard = ({ title, img }) => {
   return (
     <div className="group relative flex h-128 w-full flex-col items-center justify-end overflow-hidden before:absolute before:inset-0 before:-z-10 before:bg-black before:bg-opacity-25 before:content-['']">
@@ -16,6 +18,11 @@ const ProjectCard = ({ title, img }) => {
       </h4>
     </div>
   );
+};
+
+ProjectCard.propTypes = {
+  title: PropTypes.string,
+  img: PropTypes.string,
 };
 
 export default ProjectCard;

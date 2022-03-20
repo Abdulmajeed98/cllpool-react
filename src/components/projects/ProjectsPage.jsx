@@ -2,6 +2,7 @@ import React from "react";
 import ProjectsPageCard from "./ProjectsPageCard";
 import data from "../../data.json";
 import SectionTitle from "../global/SectionTitle";
+
 const ProjectsPage = () => {
   const projectsData = data.projectsData;
   window.scrollTo(0, 0);
