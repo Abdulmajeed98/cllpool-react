@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import PropTypes from "prop-types";
+
 const NavLink = ({ destination, content, type }) => {
   if (type === "hash") {
     return (
@@ -17,6 +19,12 @@ const NavLink = ({ destination, content, type }) => {
       {content}
     </Link>
   );
+};
+
+NavLink.propTypes = {
+  destination: PropTypes.string,
+  content: PropTypes.string,
+  type: PropTypes.string,
 };
 
 export default NavLink;
