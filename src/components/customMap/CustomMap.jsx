@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Map, { Marker } from "react-map-gl";
 import { FaMapMarkerAlt } from "react-icons/fa";
-
+import PropTypes from "prop-types";
 const CustomMap = ({ latitude, longitude, mapStyle = "" }) => {
   const [viewPort, setViewPort] = useState({
     latitude,
@@ -37,6 +37,12 @@ const CustomMap = ({ latitude, longitude, mapStyle = "" }) => {
       </Marker>
     </Map>
   );
+};
+
+CustomMap.propTypes = {
+  latitude: PropTypes.number,
+  longitude: PropTypes.number,
+  mapStyle: PropTypes.string,
 };
 
 export default CustomMap;
