@@ -13,10 +13,10 @@ const ProjectsPageCard = ({ projectName, projectImg, projectId, height }) => {
   );
 };
 ProjectsPageCard.propTypes = {
-  projectName: PropTypes.string,
-  projectImg: PropTypes.string,
-  projectId: PropTypes.number,
-  height: PropTypes.string,
+  projectName: PropTypes.string.isRequired,
+  projectImg: PropTypes.string.isRequired,
+  projectId: PropTypes.number.isRequired,
+  height: PropTypes.string.isRequired,
 };
 
 export default ProjectsPageCard;

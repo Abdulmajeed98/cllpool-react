@@ -6,7 +6,7 @@ const FooterTitle = ({ title }) => {
 };
 
 FooterTitle.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
 };
 
 export default FooterTitle;

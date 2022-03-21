@@ -21,5 +21,5 @@ export const StateProvider = ({ children }) => {
 };
 
 StateProvider.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.element.isRequired,
 };

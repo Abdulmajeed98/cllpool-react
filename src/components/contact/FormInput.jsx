@@ -17,9 +17,9 @@ const FormInput = ({ id, title, placeholder, type }) => {
 };
 
 FormInput.propTypes = {
-  id: PropTypes.string,
-  type: PropTypes.string,
-  title: PropTypes.string,
-  placeholder: PropTypes.string,
+  id: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
 };
 export default FormInput;

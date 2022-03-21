@@ -22,9 +22,9 @@ const NavLink = ({ destination, content, type }) => {
 };
 
 NavLink.propTypes = {
-  destination: PropTypes.string,
-  content: PropTypes.string,
-  type: PropTypes.string,
+  destination: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
 };
 
 export default NavLink;

@@ -9,8 +9,8 @@ const ClientBrand = ({ logo, alt }) => {
 };
 
 ClientBrand.propTypes = {
-  logo: PropTypes.string,
-  alt: PropTypes.string,
+  logo: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
 };
 
 export default ClientBrand;

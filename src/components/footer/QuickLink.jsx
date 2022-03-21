@@ -24,9 +24,9 @@ const QuickLink = ({ dest, content, type }) => {
 };
 
 QuickLink.propTypes = {
-  dest: PropTypes.string,
-  content: PropTypes.string,
-  type: PropTypes.string,
+  dest: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
 };
 
 export default QuickLink;

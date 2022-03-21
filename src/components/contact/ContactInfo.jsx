@@ -27,14 +27,14 @@ const ContactInfo = ({ icon, title, content, href, altContent, altHref, target, 
 };
 
 ContactInfo.propTypes = {
-  icon: PropTypes.element,
-  title: PropTypes.string,
-  content: PropTypes.string,
-  href: PropTypes.string,
+  icon: PropTypes.element.isRequired,
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
   altHref: PropTypes.string,
   altContent: PropTypes.string,
   target: PropTypes.string,
   animation: PropTypes.string,
-  titleSize: PropTypes.string,
+  titleSize: PropTypes.string.isRequired,
 };
 export default ContactInfo;

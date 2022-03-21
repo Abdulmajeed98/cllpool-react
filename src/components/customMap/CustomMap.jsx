@@ -40,8 +40,8 @@ const CustomMap = ({ latitude, longitude, mapStyle = "" }) => {
 };
 
 CustomMap.propTypes = {
-  latitude: PropTypes.number,
-  longitude: PropTypes.number,
+  latitude: PropTypes.number.isRequired,
+  longitude: PropTypes.number.isRequired,
   mapStyle: PropTypes.string,
 };
 

@@ -160,7 +160,8 @@
     {
       "id": 3,
       "destination": "/projects",
-      "content": "projects"
+      "content": "projects",
+      "type": ""
     },
     {
       "id": 4,
