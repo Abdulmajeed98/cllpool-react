@@ -1,6 +1,6 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const ProjectsPageCard = ({ projectName, projectImg, projectId, height }) => {
   return (
@@ -11,6 +11,12 @@ const ProjectsPageCard = ({ projectName, projectImg, projectId, height }) => {
       </p>
     </Link>
   );
+};
+ProjectsPageCard.propTypes = {
+  projectName: PropTypes.string.isRequired,
+  projectImg: PropTypes.string.isRequired,
+  projectId: PropTypes.number.isRequired,
+  height: PropTypes.string.isRequired,
 };
 
 export default ProjectsPageCard;

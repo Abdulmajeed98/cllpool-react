@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 const FormInput = ({ id, title, placeholder, type }) => {
   return (
     <div className={`flex flex-1 flex-col flex-wrap items-start`}>
@@ -15,4 +16,10 @@ const FormInput = ({ id, title, placeholder, type }) => {
   );
 };
 
+FormInput.propTypes = {
+  id: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
+};
 export default FormInput;
