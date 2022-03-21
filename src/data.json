@@ -3,47 +3,146 @@
     {
       "id": 1,
       "name": "project name",
-      "img": "https://www.cllpooliraq.com/images/img1.jpg"
+      "images": [
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg"
+      ]
     },
     {
       "id": 2,
       "name": "project name",
-      "img": "https://www.cllpooliraq.com/images/img1.jpg"
+      "images": [
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg"
+      ]
     },
     {
       "id": 3,
       "name": "project name",
-      "img": "https://www.cllpooliraq.com/images/img1.jpg"
+      "images": [
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg"
+      ]
     },
     {
       "id": 4,
       "name": "project name",
-      "img": "https://www.cllpooliraq.com/images/img1.jpg"
+      "images": [
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg"
+      ]
     },
     {
       "id": 5,
       "name": "project name",
-      "img": "https://www.cllpooliraq.com/images/img1.jpg"
+      "images": [
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg"
+      ]
     },
     {
       "id": 6,
       "name": "project name",
-      "img": "https://www.cllpooliraq.com/images/img1.jpg"
+      "images": [
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg"
+      ]
     },
     {
       "id": 7,
       "name": "project name",
-      "img": "https://www.cllpooliraq.com/images/img1.jpg"
+      "images": [
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg"
+      ]
     },
     {
       "id": 8,
       "name": "project name",
-      "img": "https://www.cllpooliraq.com/images/img1.jpg"
+      "images": [
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg"
+      ]
     },
     {
       "id": 9,
       "name": "project name",
-      "img": "https://www.cllpooliraq.com/images/img1.jpg"
+      "images": [
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg",
+        "https://www.cllpooliraq.com/images/img1.jpg"
+      ]
     }
   ],
   "ServiceCards": [

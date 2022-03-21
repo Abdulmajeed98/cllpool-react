@@ -9,7 +9,7 @@ const Header = lazy(() => import("./components/header/Header"));
 const AboutUs = lazy(() => import("./components/aboutUs/AboutUs"));
 const ContactUs = lazy(() => import("./components/contact/ContactUs"));
 const OurClients = lazy(() => import("./components/ourClients/OurClients"));
-const Projects = lazy(() => import("./components/projects/Projects"));
+const Projects = lazy(() => import("./components/projects/ProjectsSection"));
 const Footer = lazy(() => import("./components/footer/Footer"));
 const ProjectsPage = lazy(() => import("./components/projects/ProjectsPage"));
 const SingleProject = lazy(() => import("./components/singleProject/SingleProject"));

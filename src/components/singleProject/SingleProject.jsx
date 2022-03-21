@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
@@ -9,10 +9,14 @@ import data from "../../data.json";
 
 const SingleProject = () => {
   const { projectId } = useParams();
-  window.scrollTo(0, 0);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [projectId]);
+
+  const currentProject = data.projectsData.find((element) => element.id === parseInt(projectId));
 
   return (
-    <div className="mt-nav-offset flex flex-col p-10 px-sides">
+    <div className="mt-nav-offset flex flex-col gap-20 py-10 px-sides">
       <div className="flex justify-between">
         <div className="flex-1">
           <h2 className="mb-8 text-center text-4xl capitalize">Project Name</h2>
@@ -26,50 +30,19 @@ const SingleProject = () => {
         </div>
         <div className="flex-2">
           <Splide className="px-20 ">
-            <SplideSlide className="overflow-hidden rounded-xl">
-              <img
-                width={100}
-                height={100}
-                src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"
-                alt="Images 1"
-                className="h-128"
-              />
-            </SplideSlide>
-            <SplideSlide className="overflow-hidden rounded-xl">
-              <img
-                width={100}
-                height={100}
-                src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"
-                alt="Images 1"
-                className="h-128"
-              />
-            </SplideSlide>
-            <SplideSlide className="overflow-hidden rounded-xl">
-              <img
-                width={100}
-                height={100}
-                src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"
-                alt="Images 1"
-                className="h-128"
-              />
-            </SplideSlide>
-            <SplideSlide className="overflow-hidden rounded-xl">
-              <img
-                width={100}
-                height={100}
-                src="https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"
-                alt="Images 1"
-                className="h-128"
-              />
-            </SplideSlide>
+            {currentProject.images.map((image, index) => (
+              <SplideSlide key={index} className="overflow-hidden rounded-xl">
+                <img width={100} height={100} src={image} alt={`project image ${index + 1}`} className="h-128 w-full object-cover" />
+              </SplideSlide>
+            ))}
           </Splide>
         </div>
       </div>
-      <div className="mt-10 flex flex-col">
-        <h2 className="mb-10 text-center text-2xl font-medium capitalize">SeeMore</h2>
+      <div className="flex flex-col">
+        <h2 className="mb-10 text-center text-2xl font-medium capitalize">See More</h2>
         <div className="grid grid-cols-3 gap-3">
           {data.projectsData.slice(0, 6).map((element) => (
-            <ProjectsPageCard key={element.id} projectId={element.id} projectName={element.name} projectImg={element.img} height="h-96" />
+            <ProjectsPageCard key={element.id} projectId={element.id} projectName={element.name} projectImg={element.images[0]} height="h-96" />
           ))}
         </div>
       </div>
